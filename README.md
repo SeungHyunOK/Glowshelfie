@@ -1,2 +1,0 @@
-# Glowshelfi
-Glowshelfi's project
