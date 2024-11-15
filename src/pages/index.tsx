@@ -1,9 +1,9 @@
-import Nav from './components/nav'
+import Quizz from './quizz'
 
 export default function Home() {
   return (
     <>
-      <Nav />
+      <Quizz />
     </>
   )
 }
