@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import Image from 'next/image'
 
 interface LinkImageProps {
   children: string
@@ -7,51 +8,58 @@ interface LinkImageProps {
 
 const LinkImage: React.FC<LinkImageProps> = ({ children }) => {
   const [imageUrl, setImageUrl] = useState<string | null>(null)
+  const [loading, setLoading] = useState<boolean>(true)
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      // 클라이언트 측에서만 실행
-      const fetchMetaImage = async () => {
-        try {
-          const proxyUrl = 'https://api.allorigins.win/get?url='
-          const response = await axios.get(
-            `${proxyUrl}${encodeURIComponent(children)}`,
-            {
-              headers: {
-                'Content-Type': 'application/json',
-              },
-            }
-          )
-          const htmlString = response.data.contents
-          const imageMatch = htmlString.match(
-            /<meta property="og:image" content="(.*?)"/
-          )
-          if (imageMatch && imageMatch[1]) {
-            setImageUrl(imageMatch[1])
-          }
-        } catch (error) {
-          console.error('Error fetching meta image:', error)
-        }
+    const fetchMetaImage = async () => {
+      if (!children || !children.startsWith('http')) {
+        setError('Invalid URL')
+        setLoading(false)
+        setImageUrl('/images/Loading_img.png') // 기본 로딩 이미지
+        return
       }
-      fetchMetaImage()
+
+      try {
+        const apiUrl = `https://api.microlink.io/?url=${encodeURIComponent(children)}`
+        const response = await axios.get(apiUrl)
+        const image = response.data.data.image?.url || '/images/Loading_img.png' // 기본 이미지
+        setImageUrl(image)
+      } catch (error) {
+        setError('Failed to fetch image.')
+        console.error('Error fetching image:', error)
+        setImageUrl('/images/Loading_img.png') // 기본 로딩 이미지
+      } finally {
+        setLoading(false)
+      }
     }
+
+    fetchMetaImage()
   }, [children])
 
   return (
     <div>
-      {imageUrl ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          src={imageUrl}
+      {loading ? (
+        <Image
+          src="/images/Loading_img.png" // 로딩 중일 때 기본 이미지
+          alt="Loading"
+          width={300}
+          height={300}
+          style={{ borderRadius: '1.5rem' }}
+          priority={true}
+          className="animate-pulse"
+        />
+      ) : error ? (
+        <p className="text-red-500">{error}</p>
+      ) : (
+        <Image
+          src={imageUrl!}
           alt="Preview"
           width={300}
           height={300}
           style={{ borderRadius: '1.5rem' }}
+          priority={true}
         />
-      ) : (
-        <p className="underline decoration-blue-500 text-blue-500">
-          Product Purchase Link
-        </p>
       )}
     </div>
   )

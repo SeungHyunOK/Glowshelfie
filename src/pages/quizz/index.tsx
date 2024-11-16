@@ -1,23 +1,22 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Button from '@/components/button'
 import { AnswerOption } from '@/type/answerOption'
 import Result from '@/components/result'
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Quizz() {
   const [isStarted, setIsStarted] = useState(false)
   const [step, setStep] = useState(0)
   const [answers, setAnswers] = useState<AnswerOption[]>([])
-  const [email, setEmail] = useState('')
-  const [showEmailInput, setShowEmailInput] = useState(false)
   const [showResults, setShowResults] = useState(false)
 
   const questions = [
     {
       question: (
-        <div className="flex flex-col gap-8">
-          <span className="text-[2.3rem]">What&apos;s your skin type?</span>
-          <span className="text-base text-[1.7rem]">Choose one</span>
+        <div className="flex flex-col">
+          <span>What&apos;s your skin type?</span>
+          <span className="ph:text-xl">Choose one</span>
         </div>
       ),
       options: [
@@ -30,9 +29,9 @@ export default function Quizz() {
     },
     {
       question: (
-        <div className="flex flex-col gap-8">
-          <span className="text-[2.3rem]">What&apos;s your skin concerns?</span>
-          <span className="text-base text-[1.7rem]">Choose one</span>
+        <div className="flex flex-col">
+          <span>What&apos;s your skin concerns?</span>
+          <span className="ph:text-xl">Choose one</span>
         </div>
       ),
       options: [
@@ -54,38 +53,24 @@ export default function Quizz() {
     setStep(step - 1)
   }
 
+  useEffect(() => {
+    const savedAnswers = localStorage.getItem('answers')
+    if (savedAnswers) {
+      setAnswers(JSON.parse(savedAnswers))
+      setIsStarted(true)
+      setShowResults(true)
+    }
+  }, [])
+
   const handleAnswer = (answer: AnswerOption) => {
-    setAnswers([...answers, answer])
+    const updatedAnswers = [...answers, answer]
+    setAnswers(updatedAnswers)
+    localStorage.setItem('answers', JSON.stringify(updatedAnswers))
 
     if (step < questions.length - 1) {
       setStep(step + 1)
     } else {
-      setShowEmailInput(true)
-    }
-  }
-
-  const handleEmailSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault()
-    setShowEmailInput(false)
-    setShowResults(true)
-
-    try {
-      const response = await fetch('/api/sendEmail', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email }),
-      })
-      if (response.ok) {
-        const data = await response.json()
-        console.log(data.message)
-      } else {
-        const errorText = await response.text()
-        console.log('Fail to send email:', errorText)
-      }
-    } catch (error) {
-      console.log('Error sending email', error)
+      setShowResults(true)
     }
   }
 
@@ -99,10 +84,9 @@ export default function Quizz() {
         />
         <meta
           name="keywords"
-          content="skincare, skincare quiz, personalized skincare, beauty quiz, skin type quiz"
+          content="skincare quiz, personalized skincare routine, skin type quiz, best skincare products, skincare concerns"
         />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourdomain.com/quizz" />
+
         <meta
           property="og:title"
           content="Personalized Skincare Routine Quiz"
@@ -113,77 +97,120 @@ export default function Quizz() {
         />
         <meta
           property="og:image"
-          content="https://yourdomain.com/images/quiz-thumbnail.jpg"
+          content="https://glowshelfi.vercel.app/images/og_image.png"
         />
       </Head>
-      <div className="flex justify-center items-center flex-col">
-        <div className="flex w-5/6 h-5/6 flex-col flex-wrap bg-[#D9D9D9] py-28 shadow-lg ph:py-7 shadow-gray-500 justify-center items-center rounded-2xl  mx-7 relative ph:mt-3 mt-[6.18rem] mb-[9.5rem]">
+      <div className="flex flex-col items-center justify-center">
+        <div className="relative mx-7 mb-[9.5rem] mt-[6.18rem] flex w-5/6 flex-col flex-wrap items-center justify-center rounded-2xl bg-[#D9D9D9] px-2 py-16 shadow-lg shadow-gray-500 ph:mt-3 ph:py-7">
           {!isStarted ? (
             <>
-              <span className="flex flex-col font-bold text-center gap-20 mb-28">
-                <span className="text-[2.3rem]">
-                  Let&apos;s build your personalized skincare routine!
-                </span>
-                <span className="text-[1.7rem]">
-                  Take this quiz to find out which routine is perfect for your
-                  skin.
-                </span>
+              <span className="mx-2 mb-28 flex flex-col gap-20 text-center font-bold ph:mb-6 ph:gap-5">
+                <h1 className="sm:text-3xl md:text-3xl lg:text-4xl ph:text-2xl">
+                  🐰 Let&apos;s build your personalized Korean Skincare routine!
+                  💓✨
+                </h1>
+                <h2 className="text-[1.7rem] ph:text-lg">
+                  ✨ Take this quiz to find out which routine is perfect for
+                  your skin 👸✨
+                </h2>
               </span>
               <Button
-                className="bg-[#F7DFDE] hover:bg-amber-200 text-[2.5rem] px-8 py-4 font-bold rounded-2xl shadow-gray-500 shadow-lg"
+                className="rounded-2xl bg-[#F7DFDE] px-8 py-4 text-[2.5rem] font-bold shadow-lg shadow-gray-500 hover:bg-amber-200 ph:text-2xl"
                 onClick={handleStart}
               >
-                Let&apos;s start!
+                Let&apos;s start! 💓✨
               </Button>
             </>
-          ) : showEmailInput ? (
-            <div className="flex flex-col flex-wrap items-center justify-center p-3">
-              <span className="text-[2.3rem] text-center font-bold mb-20 ph:text-3xl">
-                What&apos;s your email address?
-              </span>
-              <form
-                onSubmit={handleEmailSubmit}
-                className="p-1 gap-3 flex ph:flex-col justify-center items-stretch"
-              >
-                <input
-                  type="email"
-                  className="w-full px-4 py-3 rounded-lg border focus:outline-black focus:border-[#F7F0DE] transition-all duration-300 ease-in-out placeholder-gray-400 shadow-sm"
-                  placeholder="Enter your email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                  title="Please enter a valid email address"
-                  required
-                />
-                <Button
-                  className="bg-[#F7F0DE] hover:bg-amber-200 text-xl p-2 font-bold rounded-2xl h-full"
-                  type="submit"
-                >
-                  Submit
-                </Button>
-              </form>
-            </div>
           ) : showResults ? (
-            <div className="flex flex-col items-center text-center">
-              <h2 className="text-2xl font-bold mb-9">
-                ❤️Here are the best products for you!❤️
+            <div className="flex flex-col items-center justify-center text-center">
+              <h2 className="mb-9 text-2xl font-bold">
+                🐰 Here is your personalized Korean skincare routine💓✨
+                <br />✨ USE DISCOUNT & REWARD CODE TO SAVE MONEY ✨
               </h2>
-              <p>These are discount code!</p>
-              <ul>
-                <li>Beauty of Joseon code: GLOWSHELFIE</li>
-                <li>MIXSOON Code : GLOW10</li>
-                <li>Yesstyle Code : GLOWSHELFIE0</li>
-                <li>Olive Young Code : GLOWSHELFIE1</li>
-                <li>Stylevana code : INF10GSHELFIE</li>
+              <ul className="mb-2 flex flex-wrap justify-center gap-2 font-bold">
+                <li>
+                  <Link
+                    href="https://www.yesstyle.com/en/home.html?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer"
+                    hrefLang="en"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    aria-label="Visit yesstyle official website"
+                    title="Visit yesstyle official website"
+                  >
+                    <Button className="rounded-2xl bg-[#F7DFDE] px-3 py-2 shadow-lg hover:bg-amber-200">
+                      🛍️ YESSTYLE CODE :{' '}
+                      <span className="underline">GLOWSHELFIE0</span>
+                    </Button>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://global.oliveyoung.com/?rwardCode=GLOWSHELFIE1&utm_source=influencers"
+                    hrefLang="en"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    aria-label="Visit oliveyoung official website"
+                    title="Visit oliveyoung official website"
+                  >
+                    <Button className="rounded-2xl bg-[#F7DFDE] px-3 py-2 shadow-lg hover:bg-amber-200">
+                      🫒 OLIVE YOUNG CODE :{' '}
+                      <span className="underline">GLOWSHELFIE1</span>
+                    </Button>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://www.stylevana.com/en_US/"
+                    hrefLang="en"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    aria-label="Visit stylevana official website"
+                    title="Visit stylevana official website"
+                  >
+                    <Button className="rounded-2xl bg-[#F7DFDE] px-3 py-2 shadow-lg hover:bg-amber-200">
+                      💸 STYLEVANA CODE :{' '}
+                      <span className="underline">INF10GSHELFIE</span>
+                    </Button>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://beautyofjoseon.com/?dt_id=1529790"
+                    hrefLang="en"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    aria-label="Visit Beauty of Joseon official website"
+                    title="Visit Beauty of Joseon official website"
+                  >
+                    <Button className="rounded-2xl bg-[#F7DFDE] px-3 py-2 shadow-lg hover:bg-amber-200">
+                      👸 BEAUTY OF JOSEON CODE:{' '}
+                      <span className="underline">GLOWSHELFIE</span>
+                    </Button>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://mixsoon.us/?srsltid=AfmBOooqvCdF_ShGTyE2bVQPu_NSeGm1VYANo6DBmlxfFwC39G7qnNY_"
+                    hrefLang="en"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    aria-label="Visit Mixsoon official website"
+                    title="Visit Mixsoon official website"
+                  >
+                    <Button className="rounded-2xl bg-[#F7DFDE] px-3 py-2 shadow-lg hover:bg-amber-200">
+                      ✨ MIXSOON CODE :{' '}
+                      <span className="underline">GLOW10</span>
+                    </Button>
+                  </Link>
+                </li>
               </ul>
               <Result answers={answers} />
               <Button
-                className="bg-[#F7DFDE] hover:bg-amber-200 shadow-lg text-2xl p-2 rounded-2xl mt-9"
+                className="mt-9 rounded-2xl bg-[#F7DFDE] p-2 text-2xl shadow-lg hover:bg-amber-200"
                 onClick={() => {
                   setIsStarted(false)
                   setShowResults(false)
                   setAnswers([])
-                  setEmail('')
                   setStep(0)
                 }}
               >
@@ -191,15 +218,22 @@ export default function Quizz() {
               </Button>
             </div>
           ) : (
-            <div className="flex flex-wrap flex-col p-2 text-center justify-center items-center">
-              <div className="font-bold mb-10 mt-12">
+            <div className="flex w-4/5 flex-col flex-wrap items-center justify-center p-2 text-center">
+              <div className="h-4 w-full rounded-lg bg-gray-300">
+                <div
+                  className="h-4 rounded-lg bg-[#F7DFDE]"
+                  style={{ width: `${((step + 1) / questions.length) * 70}%` }}
+                />
+              </div>
+
+              <div className="mb-10 mt-12 text-4xl font-bold ph:text-2xl">
                 {questions[step].question}
               </div>
-              <div className="flex flex-wrap gap-4 mb-10 justify-center">
+              <div className="mb-10 flex flex-wrap justify-center gap-2">
                 {questions[step].options.map((option, index) => (
                   <Button
                     key={index}
-                    className="bg-[#F7DFDE] hover:bg-amber-200 shadow-lg text-2xl p-2 rounded-2xl"
+                    className="rounded-2xl bg-[#F7DFDE] p-2 text-2xl shadow-lg hover:bg-amber-200 ph:text-lg"
                     onClick={() => handleAnswer(option)}
                   >
                     {option}
@@ -208,7 +242,7 @@ export default function Quizz() {
               </div>
               {step !== 0 && (
                 <Button
-                  className="bg-[#F7F0DE] py-2 px-4 text-2xl font-bold rounded-3xl hover:bg-amber-200"
+                  className="rounded-3xl bg-[#F7F0DE] px-4 py-2 text-2xl font-bold hover:bg-amber-200 ph:text-lg"
                   onClick={handleBack}
                 >
                   Back

@@ -41,6 +41,7 @@ import {
 import Products from '@/type/products'
 import LinkImage from './linkImage'
 import Link from 'next/link'
+import Button from './button'
 
 interface ResultProps {
   answers: string[]
@@ -126,31 +127,52 @@ export default function Result({ answers }: ResultProps) {
       <p>No matching products found. Please try a different combination.</p>
     )
   }
+  let stepCounter = 1 // Step 번호 관리용 카운터
 
   return (
-    <div className="flex flex-wrap items-center justify-center text-center gap-3">
+    <div className="flex flex-wrap items-center justify-center gap-3 text-center">
       {Object.entries(recommendedProducts)
         .filter(([, product]) => product)
-        .map(([step, product], index) => (
-          <div
-            key={step}
-            className="flex flex-col m-4 justify-center items-center"
-          >
-            <h1 className="font-bold text-xl">Step {index + 1}</h1>
-            <h3 className="font-semibold mb-3">{step}</h3>
-            <hr className="border-t-2 border-black" />
-            <p className="mb-4">{product.name}</p>
-            <Link
-              href={product.link}
-              hrefLang="en"
-              target="_blank"
-              rel="noopener"
-              referrerPolicy="origin"
+        .map(([step, product]) => {
+          const isStepVisible = ![
+            'Essence (1~2 time a day)',
+            'Toner Pads (2~3 times a week)',
+            'Treatments (2~3 times a week)',
+            'Sheet Masks (2~3 times a week)',
+          ].includes(step)
+
+          return (
+            <div
+              key={step}
+              className="m-4 flex max-w-[18rem] flex-col items-center justify-center"
             >
-              <LinkImage>{product.link}</LinkImage>
-            </Link>
-          </div>
-        ))}
+              {isStepVisible && (
+                <h1 className="text-lg font-bold sm:text-xl md:text-2xl">
+                  Step {stepCounter++}
+                </h1>
+              )}
+              <h3 className="mb-3 text-base font-semibold sm:text-lg md:text-xl">
+                {step}
+              </h3>
+              <hr className="border-t-2 border-black" />
+              <p className="mb-4 text-sm sm:text-base md:text-lg">
+                {product.name}
+              </p>
+              <Link
+                href={product.link}
+                hrefLang="en"
+                target="_blank"
+                rel="noopener"
+                referrerPolicy="origin"
+              >
+                <LinkImage>{product.link}</LinkImage>
+                <Button className="mt-2 rounded-2xl bg-[#F7DFDE] px-3 py-2 shadow-lg hover:bg-amber-200">
+                  Buy
+                </Button>
+              </Link>
+            </div>
+          )
+        })}
     </div>
   )
 }
