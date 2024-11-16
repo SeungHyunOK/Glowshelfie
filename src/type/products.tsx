@@ -4,19 +4,18 @@ interface Product {
 }
 
 interface Products {
-  'Oil Cleanser (PM routine)': Product | null
+  'Oil Cleanser (1 time a day PM only)': Product | null
   'Cleanser (2 times a day)': Product | null
-  'Exfoliator (1-2 a week)': Product | null
   'Toner (2 times a day)': Product | null
-  Essence: Product | null
-  TonerPads: Product | null
-  Treatments: Product | null
-  SheetMasks: Product | null
+  'Essence (1~2 time a day)': Product | null
+  'Toner Pads (2~3 times a week)': Product | null
+  'Treatments (2~3 times a week)': Product | null
+  'Sheet Masks (2~3 times a week)': Product | null
   'Serum-First (2 times a day)': Product | null
   'Serum-Second (2 times a day)': Product | null
   'Eye cream (2 times a day)': Product | null
   'Moisturizer (2 times a day)': Product | null
-  'Sunscreen (AM routine)': Product | null
+  'Sunscreen (1 time a day AM only)': Product | null
 }
 
 export default Products

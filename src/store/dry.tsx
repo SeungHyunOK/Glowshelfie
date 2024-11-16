@@ -1,7 +1,7 @@
 import Products from '@/type/products'
 
 export const dryPores: Products = {
-  'Oil Cleanser (PM routine)': {
+  'Oil Cleanser (1 time a day PM only)': {
     name: 'SKIN 1004 - Madagascar Centella Light Cleansing Oil',
     link: 'https://www.yesstyle.com/en/skin-1004-madagascar-centella-light-cleansing-oil-200ml/info.html/pid.1077182361?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
@@ -9,21 +9,20 @@ export const dryPores: Products = {
     name: 'ANUA - HEARTLEAF QUERCETINOL PORE DEEP CLEANSING FOAM',
     link: 'https://www.yesstyle.com/en/anua-heartleaf-quercetinol-pore-deep-cleansing-foam-150ml/info.html/pid.1129006061?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
-  'Exfoliator (1-2 a week)': null,
   'Toner (2 times a day)': {
     name: "I'm from - Rice Toner",
     link: 'https://www.yesstyle.com/en/im-from-rice-toner-150ml/info.html/pid.1069348866?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
-  Essence: null,
-  TonerPads: {
+  'Essence (1~2 time a day)': null,
+  'Toner Pads (2~3 times a week)': {
     name: 'medicube - One Day Exosome Shot Pore Ampoule 7500',
     link: 'https://www.yesstyle.com/en/medicube-one-day-exosome-shot-pore-ampoule-7500-30ml/info.html/pid.1129520455?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
-  Treatments: {
+  'Treatments (2~3 times a week)': {
     name: 'medicube - Zero Pore Pad 2.0',
     link: 'https://www.yesstyle.com/en/medicube-zero-pore-pad-2-0-70-pads/info.html/pid.1124067239?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
-  SheetMasks: {
+  'Sheet Masks (2~3 times a week)': {
     name: 'Biodance - Bio Collagen Real Deep Mask Set',
     link: 'https://www.yesstyle.com/en/biodance-bio-collagen-real-deep-mask-set-34g-x-4-sheets/info.html/pid.1131989391?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
@@ -43,14 +42,14 @@ export const dryPores: Products = {
     name: 'SKIN&LAB - Retinol Lifting Roller Cream',
     link: 'https://www.yesstyle.com/en/skin-lab-retinol-lifting-roller-cream-50ml/info.html/pid.1127213721?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
-  'Sunscreen (AM routine)': {
+  'Sunscreen (1 time a day AM only)': {
     name: 'Beauty of Joseon - Relief Sun',
     link: 'https://www.yesstyle.com/en/beauty-of-joseon-relief-sun-50ml/info.html/pid.1107744417?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
 }
 
 export const dryAnti: Products = {
-  'Oil Cleanser (PM routine)': {
+  'Oil Cleanser (1 time a day PM only)': {
     name: 'MEDI-PEEL - Red Lacto Collagen Cleansing Oil 2.0',
     link: 'https://www.yesstyle.com/en/medi-peel-red-lacto-collagen-cleansing-oil-2-0-200ml/info.html/pid.1129179463?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
@@ -58,18 +57,17 @@ export const dryAnti: Products = {
     name: 'MEDI-PEEL - Green Cica Collagen Clear 2.0 Jumbo',
     link: 'https://www.yesstyle.com/en/medi-peel-green-cica-collagen-clear-2-0-jumbo-300ml/info.html/pid.1126131502?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
-  'Exfoliator (1-2 a week)': null,
   'Toner (2 times a day)': {
     name: 'medicube - Triple Collagen Toner',
     link: 'https://www.yesstyle.com/en/medicube-triple-collagen-toner-140ml/info.html/pid.1124066779?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
-  Essence: null,
-  TonerPads: {
+  'Essence (1~2 time a day)': null,
+  'Toner Pads (2~3 times a week)': {
     name: 'Biodance - Collagen Gel Toner Pads',
     link: 'https://www.yesstyle.com/en/biodance-collagen-gel-toner-pads-60-pads/info.html/pid.1131493947?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
-  Treatments: null,
-  SheetMasks: {
+  'Treatments (2~3 times a week)': null,
+  'Sheet Masks (2~3 times a week)': {
     name: 'Biodance - Bio Collagen Real Deep Mask Set',
     link: 'https://www.yesstyle.com/en/biodance-bio-collagen-real-deep-mask-set-34g-x-4-sheets/info.html/pid.1131989391?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
@@ -89,14 +87,14 @@ export const dryAnti: Products = {
     name: 'medicube - Deep Vita C Capsule Cream',
     link: 'https://www.yesstyle.com/en/medicube-deep-vita-c-capsule-cream-55g/info.html/pid.1129945243?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
-  'Sunscreen (AM routine)': {
+  'Sunscreen (1 time a day AM only)': {
     name: 'Beauty of Joseon - Relief Sun',
     link: 'https://www.yesstyle.com/en/beauty-of-joseon-relief-sun-50ml/info.html/pid.1107744417?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
 }
 
 export const dryHydrating: Products = {
-  'Oil Cleanser (PM routine)': {
+  'Oil Cleanser (1 time a day PM only)': {
     name: 'SKIN 1004 - Madagascar Centella Light Cleansing Oil',
     link: 'https://www.yesstyle.com/en/skin-1004-madagascar-centella-light-cleansing-oil-200ml/info.html/pid.1077182361?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
@@ -104,15 +102,14 @@ export const dryHydrating: Products = {
     name: 'ROUND LAB - 1025 Dokdo Cleanser',
     link: 'https://www.yesstyle.com/en/round-lab-1025-dokdo-cleanser-150ml/info.html/pid.1074113181?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
-  'Exfoliator (1-2 a week)': null,
   'Toner (2 times a day)': {
     name: "I'm from - Rice Toner",
     link: 'https://www.yesstyle.com/en/im-from-rice-toner-150ml/info.html/pid.1069348866?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
-  Essence: null,
-  TonerPads: null,
-  Treatments: null,
-  SheetMasks: {
+  'Essence (1~2 time a day)': null,
+  'Toner Pads (2~3 times a week)': null,
+  'Treatments (2~3 times a week)': null,
+  'Sheet Masks (2~3 times a week)': {
     name: 'Biodance - Hydro Cera-nol Real Deep Mask Set',
     link: 'https://www.yesstyle.com/en/biodance-hydro-cera-nol-real-deep-mask-set-34g-x-4-sheets/info.html/pid.1130812985?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
@@ -132,14 +129,14 @@ export const dryHydrating: Products = {
     name: 'Anua - Heartleaf 70 Intense Calming Cream',
     link: 'https://www.yesstyle.com/en/anua-heartleaf-70-intense-calming-cream-50ml/info.html/pid.1096801874?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
-  'Sunscreen (AM routine)': {
+  'Sunscreen (1 time a day AM only)': {
     name: 'Beauty of Joseon - Relief Sun',
     link: 'https://www.yesstyle.com/en/beauty-of-joseon-relief-sun-50ml/info.html/pid.1107744417?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
 }
 
 export const dryBlemishes: Products = {
-  'Oil Cleanser (PM routine)': {
+  'Oil Cleanser (1 time a day PM only)': {
     name: 'SKIN 1004 - Madagascar Centella Light Cleansing Oil',
     link: 'https://www.yesstyle.com/en/skin-1004-madagascar-centella-light-cleansing-oil-200ml/info.html/pid.1077182361?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
@@ -147,18 +144,17 @@ export const dryBlemishes: Products = {
     name: 'SKIN 1004 - Madagascar Centella Ampoule Foam',
     link: 'https://www.yesstyle.com/en/skin-1004-madagascar-centella-ampoule-foam-125ml/info.html/pid.1077182367?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
-  'Exfoliator (1-2 a week)': null,
   'Toner (2 times a day)': {
     name: 'Purito SEOUL - Wonder Releaf Centella Toner',
     link: 'https://www.yesstyle.com/en/purito-seoul-wonder-releaf-centella-toner-200ml/info.html/pid.1127264622?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
-  Essence: null,
-  TonerPads: {
+  'Essence (1~2 time a day)': null,
+  'Toner Pads (2~3 times a week)': {
     name: 'Abib - Heartleaf Spot Pad Calming Touch',
     link: 'https://www.yesstyle.com/en/abib-heartleaf-spot-pad-calming-touch-renewed-80-pads/info.html/pid.1094614745?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
-  Treatments: null,
-  SheetMasks: {
+  'Treatments (2~3 times a week)': null,
+  'Sheet Masks (2~3 times a week)': {
     name: 'Biodance - Hydro Cera-nol Real Deep Mask Set',
     link: 'https://www.yesstyle.com/en/biodance-hydro-cera-nol-real-deep-mask-set-34g-x-4-sheets/info.html/pid.1130812985?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
@@ -178,30 +174,29 @@ export const dryBlemishes: Products = {
     name: 'Dr. Althea - 345 Relief Cream',
     link: 'https://www.yesstyle.com/en/dr-althea-345-relief-cream-renewed-50ml/info.html/pid.1124698946?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
-  'Sunscreen (AM routine)': {
+  'Sunscreen (1 time a day AM only)': {
     name: 'Beauty of Joseon - Relief Sun',
     link: 'https://www.yesstyle.com/en/beauty-of-joseon-relief-sun-50ml/info.html/pid.1107744417?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
 }
 
 export const dryDark: Products = {
-  'Oil Cleanser (PM routine)': null,
+  'Oil Cleanser (1 time a day PM only)': null,
   'Cleanser (2 times a day)': {
     name: 'ANUA - HEARTLEAF QUERCETINOL PORE DEEP CLEANSING FOAM',
     link: 'https://www.yesstyle.com/en/anua-heartleaf-quercetinol-pore-deep-cleansing-foam-150ml/info.html/pid.1129006061?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
-  'Exfoliator (1-2 a week)': null,
   'Toner (2 times a day)': {
     name: 'Anua - Rice 70 Glow Milky Toner',
     link: 'https://www.yesstyle.com/en/anua-rice-70-glow-milky-toner-250ml/info.html/pid.1129917448?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
-  Essence: null,
-  TonerPads: {
+  'Essence (1~2 time a day)': null,
+  'Toner Pads (2~3 times a week)': {
     name: 'Numbuzin - No.5 Vitamin-Niacinamide Concentrated Pad',
     link: 'https://www.yesstyle.com/en/numbuzin-no-5-vitamin-niacinamide-concentrated-pad-70-pads/info.html/pid.1124137874?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
-  Treatments: null,
-  SheetMasks: {
+  'Treatments (2~3 times a week)': null,
+  'Sheet Masks (2~3 times a week)': {
     name: 'Biodance - Bio Collagen Real Deep Mask Set',
     link: 'https://www.yesstyle.com/en/biodance-bio-collagen-real-deep-mask-set-34g-x-4-sheets/info.html/pid.1131989391?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
@@ -221,14 +216,14 @@ export const dryDark: Products = {
     name: 'Medicube - Deep Vita C Capsule Cream',
     link: 'https://www.yesstyle.com/en/medicube-deep-vita-c-capsule-cream-55g/info.html/pid.1129945243?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
-  'Sunscreen (AM routine)': {
+  'Sunscreen (1 time a day AM only)': {
     name: 'Beauty of Joseon - Relief Sun',
     link: 'https://www.yesstyle.com/en/beauty-of-joseon-relief-sun-50ml/info.html/pid.1107744417?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
 }
 
 export const dryAcne: Products = {
-  'Oil Cleanser (PM routine)': {
+  'Oil Cleanser (1 time a day PM only)': {
     name: 'SKIN 1004 - Madagascar Centella Light Cleansing Oil',
     link: 'https://www.yesstyle.com/en/skin-1004-madagascar-centella-light-cleansing-oil-200ml/info.html/pid.1077182361?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
@@ -236,21 +231,20 @@ export const dryAcne: Products = {
     name: 'SKIN 1004 - Madagascar Centella Ampoule Foam',
     link: 'https://www.yesstyle.com/en/skin-1004-madagascar-centella-ampoule-foam-125ml/info.html/pid.1077182367?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
-  'Exfoliator (1-2 a week)': null,
   'Toner (2 times a day)': {
     name: 'Purito SEOUL - Wonder Releaf Centella Toner',
     link: 'https://www.yesstyle.com/en/purito-seoul-wonder-releaf-centella-toner-200ml/info.html/pid.1127264622?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
-  Essence: null,
-  TonerPads: {
+  'Essence (1~2 time a day)': null,
+  'Toner Pads (2~3 times a week)': {
     name: 'Abib - Heartleaf Spot Pad Calming Touch',
     link: 'https://www.yesstyle.com/en/abib-heartleaf-spot-pad-calming-touch-renewed-80-pads/info.html/pid.1094614745?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
-  Treatments: {
+  'Treatments (2~3 times a week)': {
     name: 'COSRX - Acne Pimple Master Patch',
     link: 'https://www.yesstyle.com/en/cosrx-acne-pimple-master-patch-24-patches/info.html/pid.1052684647?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
-  SheetMasks: {
+  'Sheet Masks (2~3 times a week)': {
     name: 'Biodance - Hydro Cera-nol Real Deep Mask Set',
     link: 'https://www.yesstyle.com/en/biodance-hydro-cera-nol-real-deep-mask-set-34g-x-4-sheets/info.html/pid.1130812985?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
@@ -270,7 +264,7 @@ export const dryAcne: Products = {
     name: 'Dr. Althea - 345 Relief Cream',
     link: 'https://www.yesstyle.com/en/dr-althea-345-relief-cream-renewed-50ml/info.html/pid.1124698946?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
-  'Sunscreen (AM routine)': {
+  'Sunscreen (1 time a day AM only)': {
     name: 'Beauty of Joseon - Relief Sun',
     link: 'https://www.yesstyle.com/en/beauty-of-joseon-relief-sun-50ml/info.html/pid.1107744417?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },

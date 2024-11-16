@@ -7,7 +7,6 @@
   body {
     @apply font-notoSans;
     width: 100%;
-    min-height: 100%;
     overflow-x: hidden;
     background-image: url('/images/glowshelfe_background.png');
   }
