@@ -1,28 +1,23 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
-    "module": "ESNext",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "outDir": "./dist",
-    "strict": true,
-    "noEmit": false,
-    "esModuleInterop": true,
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
+    "target": "es5", // ES5로 설정하여 호환성 보장
+    "module": "esnext", // ESNext 모듈 사용
+    "lib": ["dom", "dom.iterable", "esnext"], // 사용할 라이브러리들 설정
+    "allowJs": true, // JavaScript 파일 허용
+    "skipLibCheck": true, // 외부 라이브러리 타입 검사 건너뛰기
+    "strict": true, // 엄격한 타입 검사 모드 활성화
+    "forceConsistentCasingInFileNames": true, // 파일 이름의 대소문자 일관성 검사
+    "noEmit": true, // 컴파일된 파일을 출력하지 않음
+    "esModuleInterop": true, // CommonJS 모듈과 호환
+    "moduleResolution": "node", // Node 방식의 모듈 해석
+    "resolveJsonModule": true, // JSON 모듈을 import할 수 있게 허용
+    "isolatedModules": true, // 각 파일을 독립적으로 처리 (Next.js 필수)
+    "jsx": "preserve", // JSX 형식 그대로 유지하여 빌드 후 Babel 등이 처리할 수 있게 함
+    "incremental": true, // 점진적 빌드로 컴파일 시간 단축
     "paths": {
-      "@app/*": ["./app/*"],
-      "@assets/*": ["./assets/*"],
-      "@components/*": ["./components/*"],
-      "@styles/*": ["./styles/*"],
-      "@utils/*": ["./utils/*"]
-    },
-    "forceConsistentCasingInFileNames": true
+      "@/*": ["./src/*"] // 프로젝트의 루트 경로 설정
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/**/*"],
-  "exclude": ["node_modules"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/**/*"], // 포함할 파일 정의
+  "exclude": ["node_modules"] // node_modules 폴더 제외
 }
