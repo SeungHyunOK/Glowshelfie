@@ -2,7 +2,6 @@
   "compilerOptions": {
     "target": "es5", // ES5로 설정하여 호환성 보장
     "module": "esnext", // ESNext 모듈 사용
-    "typeRoots": ["src/types"],
     "moduleResolution": "node", // Node 방식의 모듈 해석
     "lib": ["dom", "dom.iterable", "esnext"], // 사용할 라이브러리들 설정
     "allowJs": true, // JavaScript 파일 허용
@@ -16,7 +15,7 @@
     "jsx": "preserve", // JSX 형식 그대로 유지하여 빌드 후 Babel 등이 처리할 수 있게 함
     "incremental": true, // 점진적 빌드로 컴파일 시간 단축
     "paths": {
-      "@/*": ["src/*"] // 프로젝트의 루트 경로 설정
+      "@/*": ["./src/*"] // 프로젝트의 루트 경로 설정
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/**/*"], // 포함할 파일 정의
