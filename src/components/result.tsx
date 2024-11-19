@@ -40,8 +40,8 @@ import {
 } from '@/store/sensitive'
 import Products from '@/type/products'
 
-import Button from './Button'
-import LinkImage from './LinkImage'
+import Button from '@/components/Button'
+import LinkImage from '@/components/LinkImage'
 
 interface ResultProps {
   answers: string[]
