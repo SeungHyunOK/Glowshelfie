@@ -41,6 +41,7 @@ import {
 import Products from '@/type/products'
 
 import Button from '@/components/Button'
+import LinkImage from './LinkImage'
 
 interface ResultProps {
   answers: string[]
