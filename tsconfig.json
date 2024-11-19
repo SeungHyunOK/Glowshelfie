@@ -2,7 +2,8 @@
   "compilerOptions": {
     "target": "es5", // ES5로 설정하여 호환성 보장
     "module": "esnext", // ESNext 모듈 사용
-    "moduleResolution": "bundler",
+    "typeRoots": ["src/types"],
+    "moduleResolution": "node", // Node 방식의 모듈 해석
     "lib": ["dom", "dom.iterable", "esnext"], // 사용할 라이브러리들 설정
     "allowJs": true, // JavaScript 파일 허용
     "skipLibCheck": true, // 외부 라이브러리 타입 검사 건너뛰기
