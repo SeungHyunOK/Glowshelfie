@@ -1,6 +1,6 @@
 import Products from '@/type/products'
 import Button from '@/components/button'
-import LinkImage from '@/components/linkImage'
+import LinkImage from '@/components/LinkImage'
 import {
   normalAnti,
   normalBlemishes,
