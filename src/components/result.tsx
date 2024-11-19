@@ -39,8 +39,8 @@ import {
   sensitiveAcne,
 } from '@/store/sensitive'
 import Products from '@/type/products'
-import LinkImage from './LinkImage'
-import Button from './Button'
+import LinkImage from '@/components/LinkImage'
+import Button from '@/components/Button'
 
 interface ResultProps {
   answers: string[]
