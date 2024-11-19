@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
-import Button from '@/components/Button'
+import Button from '@/components/button'
 import { AnswerOption } from '@/type/answerOption'
-import Result from '@/components/Result'
+import Result from '@/components/result'
 import Head from 'next/head'
-import Footer from '@/components/Footer'
+import Footer from '@/components/footer'
 
 export default function Quizz() {
   const [isStarted, setIsStarted] = useState(false)
