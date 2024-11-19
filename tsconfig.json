@@ -29,6 +29,6 @@
     "next.config.mjs",
     "**/*.tsx",
     "src/**/*"
-  ], // 포함할 파일 정의
+  ],
   "exclude": ["node_modules"] // node_modules 폴더 제외
 }
