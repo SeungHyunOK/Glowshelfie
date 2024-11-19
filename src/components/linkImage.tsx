@@ -9,26 +9,31 @@ interface LinkImageProps {
 const LinkImage: React.FC<LinkImageProps> = ({ children }) => {
   const [imageUrl, setImageUrl] = useState<string | null>(null)
   const [loading, setLoading] = useState<boolean>(true)
-  const [error, setError] = useState<string | null>(null)
+
+  const isValidUrl = (url: string): boolean => {
+    try {
+      new URL(url)
+      return true
+    } catch {
+      return false
+    }
+  }
 
   useEffect(() => {
     const fetchMetaImage = async () => {
-      if (!children || !children.startsWith('http')) {
-        setError('Invalid URL')
+      if (!isValidUrl(children)) {
+        setImageUrl('/images/OOPS.png')
         setLoading(false)
-        setImageUrl('/images/Loading_img.png') // 기본 로딩 이미지
         return
       }
 
       try {
         const apiUrl = `https://api.microlink.io/?url=${encodeURIComponent(children)}`
         const response = await axios.get(apiUrl)
-        const image = response.data.data.image?.url || '/images/Loading_img.png' // 기본 이미지
+        const image = response.data.data.image?.url || '/images/Loading_img.png'
         setImageUrl(image)
-      } catch (error) {
-        setError('Failed to fetch image.')
-        console.error('Error fetching image:', error)
-        setImageUrl('/images/Loading_img.png') // 기본 로딩 이미지
+      } catch {
+        setImageUrl('/images/OOPS.png')
       } finally {
         setLoading(false)
       }
@@ -37,28 +42,30 @@ const LinkImage: React.FC<LinkImageProps> = ({ children }) => {
     fetchMetaImage()
   }, [children])
 
+  const handleImageError = () => {
+    setImageUrl('/images/OOPS.png')
+  }
+
   return (
     <div>
       {loading ? (
         <Image
-          src="/images/Loading_img.png" // 로딩 중일 때 기본 이미지
+          src="/images/Loading_img.png"
           alt="Loading"
           width={300}
           height={300}
-          style={{ borderRadius: '1.5rem' }}
           priority={true}
-          className="animate-pulse"
+          className="animate-pulse rounded-[1.5rem]"
         />
-      ) : error ? (
-        <p className="text-red-500">{error}</p>
       ) : (
         <Image
           src={imageUrl!}
           alt="Preview"
           width={300}
           height={300}
-          style={{ borderRadius: '1.5rem' }}
+          className="rounded-[1.5rem]"
           priority={true}
+          onError={handleImageError}
         />
       )}
     </div>

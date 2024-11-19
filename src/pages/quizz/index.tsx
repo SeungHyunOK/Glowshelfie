@@ -15,9 +15,11 @@ export default function Quizz() {
   const questions = [
     {
       question: (
-        <div className="flex flex-col">
-          <span>What&apos;s your skin type?</span>
-          <span className="ph:text-xl">Choose one</span>
+        <div className="flex flex-col gap-6 ph:gap-2 tab:gap-4">
+          <h1 className="text-6xl ph:text-2xl tab:text-4xl">
+            What&apos;s your skin type?
+          </h1>
+          <h2 className="text-4xl ph:text-lg tab:text-2xl">Choose one</h2>
         </div>
       ),
       options: [
@@ -30,9 +32,11 @@ export default function Quizz() {
     },
     {
       question: (
-        <div className="flex flex-col">
-          <span>What&apos;s your skin concerns?</span>
-          <span className="ph:text-xl">Choose one</span>
+        <div className="ph:gap- flex flex-col gap-6 tab:gap-4">
+          <h1 className="text-6xl ph:text-2xl tab:text-4xl">
+            What&apos;s your skin concerns?
+          </h1>
+          <h2 className="text-4xl ph:text-lg tab:text-2xl">Choose one</h2>
         </div>
       ),
       options: [
@@ -52,9 +56,9 @@ export default function Quizz() {
   }
 
   const handleBack = () => {
-    const prevStep = step - 1
+    const prevStep = Math.max(0, step - 1)
     setStep(prevStep)
-    localStorage.setItem('step', String(prevStep))
+    localStorage.setItem('step', 'prevStep')
   }
 
   const handleRestart = () => {
@@ -72,10 +76,15 @@ export default function Quizz() {
     const savedShowResults = localStorage.getItem('showResults') === 'true'
 
     if (savedAnswers) setAnswers(JSON.parse(savedAnswers))
-    if (savedStep) setStep(Number(savedStep))
+    if (savedStep && !isNaN(Number(savedStep))) {
+      const stepValue = Number(savedStep)
+      if (stepValue >= 0 && stepValue < questions.length) {
+        setStep(stepValue)
+      }
+    }
     setIsStarted(savedIsStarted)
     setShowResults(savedShowResults)
-  }, [])
+  }, [questions.length])
 
   const handleAnswer = (answer: AnswerOption) => {
     const updatedAnswers = [...answers, answer]
@@ -97,7 +106,7 @@ export default function Quizz() {
 
   return (
     <>
-      <div className="flex min-h-screen flex-col">
+      <div className="flex min-h-screen flex-col items-center justify-center">
         <Head>
           <title>Glowshelfie-Quizz</title>
           <meta
@@ -127,21 +136,24 @@ export default function Quizz() {
           />
         </Head>
 
-        <div className="relative mx-5 my-5 flex h-5/6 flex-col items-center justify-center rounded-lg bg-[#D9D9D9] p-10 shadow-md shadow-gray-300 ph:p-6">
+        <div className="relative m-5 flex h-5/6 w-5/6 flex-col items-center justify-center rounded-lg bg-[#D9D9D9] p-20 shadow-md shadow-gray-300 ph:p-10">
           {!isStarted ? (
             <>
-              <span className="mx-2 mb-20 flex flex-col gap-12 text-center font-bold ph:mb-10 ph:gap-5">
-                <h1 className="text-4xl font-extrabold text-gray-800 md:text-5xl lg:text-6xl xl:text-7xl">
+              <span className="mb-20 flex flex-col gap-12 text-center font-bold ph:mb-10 ph:gap-8 tab:gap-10">
+                <h1 className="text-6xl font-extrabold text-gray-800 drop-shadow-md ph:text-2xl tab:text-4xl">
                   🐰 Build Your Perfect{' '}
-                  <span className="text-pink-600">Skincare Routine</span> 💓✨
+                  <span className="stroke-[2px] text-pink-600">
+                    Skincare Routine
+                  </span>{' '}
+                  <span className="animate-pulse text-pink-600">💓✨</span>
                 </h1>
-                <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl">
+                <h2 className="text-4xl ph:text-lg tab:text-2xl">
                   ✨ Take this quiz to find out which routine is perfect for
                   your skin 👸✨
                 </h2>
               </span>
               <Button
-                className="rounded-lg bg-[#F7DFDE] px-6 py-3 text-2xl font-bold shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200 ph:py-2 ph:text-lg"
+                className="rounded-lg bg-[#F7DFDE] px-6 py-3 text-4xl font-bold shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200 ph:px-4 ph:py-2 ph:text-2xl tab:text-4xl"
                 onClick={handleStart}
               >
                 Let&apos;s start! 💓✨
@@ -149,17 +161,78 @@ export default function Quizz() {
             </>
           ) : isLoading ? (
             <div className="flex flex-col items-center justify-center text-center">
-              <h2 className="mb-6 text-xl font-bold ph:text-lg">
+              <h2 className="mb-6 text-4xl font-bold ph:text-lg tab:text-2xl">
                 ✨ Loading your results... ✨
               </h2>
               <div className="h-10 w-10 animate-spin rounded-full border-4 border-pink-600 border-t-transparent"></div>
             </div>
           ) : showResults ? (
             <div className="flex flex-col items-center justify-center text-center">
-              <h2 className="mb-6 text-xl font-bold ph:text-lg">
+              <h2 className="mb-6 text-4xl font-bold ph:text-lg">
                 🐰 Here is your personalized Korean skincare routine💓✨
                 <br />✨ USE DISCOUNT & REWARD CODE TO SAVE MONEY ✨
               </h2>
+              <ul className="mb-4 flex flex-wrap justify-center gap-4 font-bold">
+                <li>
+                  <a
+                    href="https://www.yesstyle.com/en/home.html?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block rounded-lg bg-[#F7DFDE] px-4 py-2 shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200"
+                    aria-label="YESSTYLE coupon code GLOWSHELFIE0"
+                  >
+                    🛍️ YESSTYLE CODE :{' '}
+                    <span className="underline">GLOWSHELFIE0</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.yesstyle.com/en/home.html?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block rounded-lg bg-[#F7DFDE] px-4 py-2 shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200"
+                    aria-label="OLIVE YOUNG coupon code GLOWSHELFIE1"
+                  >
+                    🫒 OLIVE YOUNG CODE :{' '}
+                    <span className="underline">GLOWSHELFIE1</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.stylevana.com/en_US/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block rounded-lg bg-[#F7DFDE] px-4 py-2 shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200"
+                    aria-label="STYLEVANA coupon code INF10GSHELFIE"
+                  >
+                    💸 STYLEVANA CODE :{' '}
+                    <span className="underline">INF10GSHELFIE</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://beautyofjoseon.com/?dt_id=1529790"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block rounded-lg bg-[#F7DFDE] px-4 py-2 shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200"
+                    aria-label="BEAUTY OF JOSEON coupon code GLOWSHELFIE"
+                  >
+                    👸 BEAUTY OF JOSEON CODE :{' '}
+                    <span className="underline">GLOWSHELFIE</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://mixsoon.us/?srsltid=AfmBOooqvCdF_ShGTyE2bVQPu_NSeGm1VYANo6DBmlxfFwC39G7qnNY_"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block rounded-lg bg-[#F7DFDE] px-4 py-2 shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200"
+                    aria-label="MIXSOON coupon code GLOW10"
+                  >
+                    ✨ MIXSOON CODE : <span className="underline">GLOW10</span>
+                  </a>
+                </li>
+              </ul>
               <Result answers={answers} />
               <Button
                 className="mt-6 rounded-lg bg-[#F7DFDE] px-4 py-2 text-lg shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200"
@@ -169,36 +242,40 @@ export default function Quizz() {
               </Button>
             </div>
           ) : (
-            <div className="flex w-full max-w-xl flex-col items-center justify-center p-4 text-center">
-              <div className="h-4 w-full rounded-full bg-gray-300">
-                <div
-                  className="transition-width h-4 rounded-full bg-[#F7DFDE] duration-300"
-                  style={{ width: `${((step + 1) / questions.length) * 70}%` }}
-                />
-              </div>
-              <div className="mb-6 mt-8 text-2xl font-bold ph:text-xl">
-                {questions[step].question}
-              </div>
-              <div className="mb-6 flex flex-wrap justify-center gap-3">
-                {questions[step].options.map((option, index) => (
+            questions[step] && (
+              <div className="flex w-full flex-col items-center justify-center gap-6 p-4 text-center">
+                <div className="h-4 w-full rounded-full bg-gray-300">
+                  <div
+                    className="transition-width h-4 rounded-full bg-[#F7DFDE] duration-300"
+                    style={{
+                      width: `${((step + 1) / questions.length) * 70}%`,
+                    }}
+                  />
+                </div>
+                <div className="mb-6 mt-8 font-bold">
+                  {questions[step]?.question}
+                </div>
+                <div className="mb-6 flex flex-wrap justify-center gap-3">
+                  {questions[step]?.options?.map((option, index) => (
+                    <Button
+                      key={index}
+                      className="rounded-lg bg-[#F7DFDE] px-4 py-2 text-3xl shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200 ph:p-1 ph:text-base tab:text-xl"
+                      onClick={() => handleAnswer(option)}
+                    >
+                      {option}
+                    </Button>
+                  ))}
+                </div>
+                {step !== 0 && (
                   <Button
-                    key={index}
-                    className="rounded-lg bg-[#F7DFDE] px-4 py-2 text-lg shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200 ph:px-3 ph:py-2"
-                    onClick={() => handleAnswer(option)}
+                    className="rounded-lg bg-[#F7F0DE] px-4 py-2 text-4xl font-bold transition-transform duration-200 hover:scale-105 hover:bg-amber-200 ph:text-lg tab:text-2xl"
+                    onClick={handleBack}
                   >
-                    {option}
+                    Back
                   </Button>
-                ))}
+                )}
               </div>
-              {step !== 0 && (
-                <Button
-                  className="rounded-lg bg-[#F7F0DE] px-3 py-2 text-lg font-bold transition-transform duration-200 hover:scale-105 hover:bg-amber-200"
-                  onClick={handleBack}
-                >
-                  Back
-                </Button>
-              )}
-            </div>
+            )
           )}
         </div>
       </div>
