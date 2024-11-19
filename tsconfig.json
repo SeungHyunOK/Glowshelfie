@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es5", // ES5로 설정하여 호환성 보장
     "module": "esnext", // ESNext 모듈 사용
-    "moduleResolution": "node", // Node 방식의 모듈 해석
+    "moduleResolution": "bundler", // Node 방식의 모듈 해석
     "lib": ["dom", "dom.iterable", "esnext"], // 사용할 라이브러리들 설정
     "allowJs": true, // JavaScript 파일 허용
     "skipLibCheck": true, // 외부 라이브러리 타입 검사 건너뛰기
@@ -16,8 +16,19 @@
     "incremental": true, // 점진적 빌드로 컴파일 시간 단축
     "paths": {
       "@/*": ["./src/*"] // 프로젝트의 루트 경로 설정
-    }
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/**/*"], // 포함할 파일 정의
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "next.config.mjs",
+    "**/*.tsx",
+    "src/**/*"
+  ], // 포함할 파일 정의
   "exclude": ["node_modules"] // node_modules 폴더 제외
 }
