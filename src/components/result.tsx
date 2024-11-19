@@ -39,7 +39,7 @@ import {
   sensitiveAcne,
 } from '@/store/sensitive'
 import Products from '@/type/products'
-import Linkimage from '@/components/Linkimage'
+
 import Button from '@/components/Button'
 
 interface ResultProps {
@@ -166,7 +166,7 @@ export default function Result({ answers }: ResultProps) {
                 className="w-full"
                 aria-label={`Buy ${product.name} from ${product.store}`}
               >
-                <Linkimage>{product.link}</Linkimage>
+                <LinkImage>{product.link}</LinkImage>
                 <Button className="mt-4 w-full rounded-lg bg-[#F7DFDE] px-4 py-2 text-base font-semibold text-gray-800 shadow-md transition-all duration-300 hover:scale-105 hover:bg-amber-200">
                   Buy
                 </Button>
