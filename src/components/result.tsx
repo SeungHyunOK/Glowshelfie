@@ -1,3 +1,6 @@
+import Products from '@/type/products'
+import Button from '@/components/button'
+import LinkImage from '@/components/linkImage'
 import {
   normalAnti,
   normalBlemishes,
@@ -38,9 +41,6 @@ import {
   sensitiveDark,
   sensitiveAcne,
 } from '@/store/sensitive'
-import Products from '@/type/products'
-import Button from '@/components/button'
-import LinkImage from '@/components/linkImage'
 
 interface ResultProps {
   answers: string[]
