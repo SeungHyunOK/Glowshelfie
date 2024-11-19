@@ -32,7 +32,7 @@ export default function Quizz() {
     },
     {
       question: (
-        <div className="ph:gap- flex flex-col gap-6 tab:gap-4">
+        <div className="flex-col gap-6 ph:flex tab:gap-4">
           <h1 className="text-6xl ph:text-2xl tab:text-4xl">
             What&apos;s your skin concerns?
           </h1>
