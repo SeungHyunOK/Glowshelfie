@@ -6,7 +6,7 @@ interface LinkImageProps {
   children: string
 }
 
-const LinkImage: React.FC<LinkImageProps> = ({ children }) => {
+const Linkimage: React.FC<LinkImageProps> = ({ children }) => {
   const [imageUrl, setImageUrl] = useState<string | null>(null)
   const [loading, setLoading] = useState<boolean>(true)
 
@@ -72,4 +72,4 @@ const LinkImage: React.FC<LinkImageProps> = ({ children }) => {
   )
 }
 
-export default LinkImage
+export default Linkimage
