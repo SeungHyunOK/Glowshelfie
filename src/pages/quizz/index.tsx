@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import Button from '@/components/Button'
 import { AnswerOption } from '@/type/answerOption'
-import Result from '../../components/LinkImage'
+import Result from '@/components/Result'
 import Head from 'next/head'
 import Footer from '@/components/Footer'
 
