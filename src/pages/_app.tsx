@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app'
 import '@/styles/global.css'
-import Nav from '@/components/nav' // 이 부분을 올바르게 수정합니다.
 import Head from 'next/head'
+import Nav from '@/components/nav'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

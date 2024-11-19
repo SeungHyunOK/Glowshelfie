@@ -1,4 +1,4 @@
-import Quizz from '@/pages/quizz'
+import Quizz from './quizz'
 
 export default function Home() {
   return (
