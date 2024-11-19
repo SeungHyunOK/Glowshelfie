@@ -1,15 +1,16 @@
 import { useEffect, useState } from 'react'
-import Button from '@/components/button'
+import Button from '@/components/Button'
 import { AnswerOption } from '@/type/answerOption'
-import Result from '@/components/result'
+import Result from '@/components/Result'
 import Head from 'next/head'
-import Link from 'next/link'
+import Footer from '@/components/Footer'
 
 export default function Quizz() {
   const [isStarted, setIsStarted] = useState(false)
   const [step, setStep] = useState(0)
   const [answers, setAnswers] = useState<AnswerOption[]>([])
   const [showResults, setShowResults] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
 
   const questions = [
     {
@@ -47,19 +48,33 @@ export default function Quizz() {
 
   const handleStart = () => {
     setIsStarted(true)
+    localStorage.setItem('isStarted', 'true')
   }
 
   const handleBack = () => {
-    setStep(step - 1)
+    const prevStep = step - 1
+    setStep(prevStep)
+    localStorage.setItem('step', String(prevStep))
+  }
+
+  const handleRestart = () => {
+    setIsStarted(false)
+    setShowResults(false)
+    setAnswers([])
+    setStep(0)
+    localStorage.clear()
   }
 
   useEffect(() => {
     const savedAnswers = localStorage.getItem('answers')
-    if (savedAnswers) {
-      setAnswers(JSON.parse(savedAnswers))
-      setIsStarted(true)
-      setShowResults(true)
-    }
+    const savedStep = localStorage.getItem('step')
+    const savedIsStarted = localStorage.getItem('isStarted') === 'true'
+    const savedShowResults = localStorage.getItem('showResults') === 'true'
+
+    if (savedAnswers) setAnswers(JSON.parse(savedAnswers))
+    if (savedStep) setStep(Number(savedStep))
+    setIsStarted(savedIsStarted)
+    setShowResults(savedShowResults)
   }, [])
 
   const handleAnswer = (answer: AnswerOption) => {
@@ -69,171 +84,106 @@ export default function Quizz() {
 
     if (step < questions.length - 1) {
       setStep(step + 1)
+      localStorage.setItem('step', String(step + 1))
     } else {
-      setShowResults(true)
+      setIsLoading(true)
+      setTimeout(() => {
+        setShowResults(true)
+        setIsLoading(false)
+        localStorage.setItem('showResults', 'true')
+      }, 2000)
     }
   }
 
   return (
     <>
-      <Head>
-        <title>Glowshelfie</title>
-        <meta
-          name="description"
-          content="Discover the best skincare routine tailored for your skin type and concerns. Take our quiz to find the perfect products for you!"
-        />
-        <meta
-          name="keywords"
-          content="skincare quiz, personalized skincare routine, skin type quiz, best skincare products, skincare concerns"
-        />
+      <div className="flex min-h-screen flex-col">
+        <Head>
+          <title>Glowshelfie-Quizz</title>
+          <meta
+            name="description"
+            content="Discover the best skincare routine tailored for your skin type and concerns. Take our quiz to find the perfect products for you!"
+          />
+          <meta
+            name="keywords"
+            content="glowshelfie, korean skincare, k beauty, glass skin, skincare routine, glowy skin, skincare steps"
+          />
+          <meta
+            property="og:title"
+            content="Personalized Skincare Routine Quiz"
+          />
+          <meta
+            property="og:description"
+            content="Discover the best skincare routine tailored for your skin type and concerns. Take our quiz to find the perfect products for you!"
+          />
+          <meta
+            property="og:image"
+            content="https://glowshelfie.vercel.app/images/og_image.png"
+          />
+          <link rel="canonical" href="https://glowshelfie.vercel.app/quizz" />
+          <meta
+            property="og:url"
+            content="https://glowshelfie.vercel.app/quizz"
+          />
+        </Head>
 
-        <meta
-          property="og:title"
-          content="Personalized Skincare Routine Quiz"
-        />
-        <meta
-          property="og:description"
-          content="Discover the best skincare routine tailored for your skin type and concerns. Take our quiz to find the perfect products for you!"
-        />
-        <meta
-          property="og:image"
-          content="https://glowshelfi.vercel.app/images/og_image.png"
-        />
-      </Head>
-      <div className="flex flex-col items-center justify-center">
-        <div className="relative mx-7 mb-[9.5rem] mt-[6.18rem] flex w-5/6 flex-col flex-wrap items-center justify-center rounded-2xl bg-[#D9D9D9] px-2 py-16 shadow-lg shadow-gray-500 ph:mt-3 ph:py-7">
+        <div className="relative mx-5 my-5 flex h-5/6 flex-col items-center justify-center rounded-lg bg-[#D9D9D9] p-10 shadow-md shadow-gray-300 ph:p-6">
           {!isStarted ? (
             <>
-              <span className="mx-2 mb-28 flex flex-col gap-20 text-center font-bold ph:mb-6 ph:gap-5">
-                <h1 className="sm:text-3xl md:text-3xl lg:text-4xl ph:text-2xl">
-                  🐰 Let&apos;s build your personalized Korean Skincare routine!
-                  💓✨
+              <span className="mx-2 mb-20 flex flex-col gap-12 text-center font-bold ph:mb-10 ph:gap-5">
+                <h1 className="text-4xl font-extrabold text-gray-800 md:text-5xl lg:text-6xl xl:text-7xl">
+                  🐰 Build Your Perfect{' '}
+                  <span className="text-pink-600">Skincare Routine</span> 💓✨
                 </h1>
-                <h2 className="text-[1.7rem] ph:text-lg">
+                <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl">
                   ✨ Take this quiz to find out which routine is perfect for
                   your skin 👸✨
                 </h2>
               </span>
               <Button
-                className="rounded-2xl bg-[#F7DFDE] px-8 py-4 text-[2.5rem] font-bold shadow-lg shadow-gray-500 hover:bg-amber-200 ph:text-2xl"
+                className="rounded-lg bg-[#F7DFDE] px-6 py-3 text-2xl font-bold shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200 ph:py-2 ph:text-lg"
                 onClick={handleStart}
               >
                 Let&apos;s start! 💓✨
               </Button>
             </>
+          ) : isLoading ? (
+            <div className="flex flex-col items-center justify-center text-center">
+              <h2 className="mb-6 text-xl font-bold ph:text-lg">
+                ✨ Loading your results... ✨
+              </h2>
+              <div className="h-10 w-10 animate-spin rounded-full border-4 border-pink-600 border-t-transparent"></div>
+            </div>
           ) : showResults ? (
             <div className="flex flex-col items-center justify-center text-center">
-              <h2 className="mb-9 text-2xl font-bold">
+              <h2 className="mb-6 text-xl font-bold ph:text-lg">
                 🐰 Here is your personalized Korean skincare routine💓✨
                 <br />✨ USE DISCOUNT & REWARD CODE TO SAVE MONEY ✨
               </h2>
-              <ul className="mb-2 flex flex-wrap justify-center gap-2 font-bold">
-                <li>
-                  <Link
-                    href="https://www.yesstyle.com/en/home.html?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer"
-                    hrefLang="en"
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    aria-label="Visit yesstyle official website"
-                    title="Visit yesstyle official website"
-                  >
-                    <Button className="rounded-2xl bg-[#F7DFDE] px-3 py-2 shadow-lg hover:bg-amber-200">
-                      🛍️ YESSTYLE CODE :{' '}
-                      <span className="underline">GLOWSHELFIE0</span>
-                    </Button>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="https://global.oliveyoung.com/?rwardCode=GLOWSHELFIE1&utm_source=influencers"
-                    hrefLang="en"
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    aria-label="Visit oliveyoung official website"
-                    title="Visit oliveyoung official website"
-                  >
-                    <Button className="rounded-2xl bg-[#F7DFDE] px-3 py-2 shadow-lg hover:bg-amber-200">
-                      🫒 OLIVE YOUNG CODE :{' '}
-                      <span className="underline">GLOWSHELFIE1</span>
-                    </Button>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="https://www.stylevana.com/en_US/"
-                    hrefLang="en"
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    aria-label="Visit stylevana official website"
-                    title="Visit stylevana official website"
-                  >
-                    <Button className="rounded-2xl bg-[#F7DFDE] px-3 py-2 shadow-lg hover:bg-amber-200">
-                      💸 STYLEVANA CODE :{' '}
-                      <span className="underline">INF10GSHELFIE</span>
-                    </Button>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="https://beautyofjoseon.com/?dt_id=1529790"
-                    hrefLang="en"
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    aria-label="Visit Beauty of Joseon official website"
-                    title="Visit Beauty of Joseon official website"
-                  >
-                    <Button className="rounded-2xl bg-[#F7DFDE] px-3 py-2 shadow-lg hover:bg-amber-200">
-                      👸 BEAUTY OF JOSEON CODE:{' '}
-                      <span className="underline">GLOWSHELFIE</span>
-                    </Button>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="https://mixsoon.us/?srsltid=AfmBOooqvCdF_ShGTyE2bVQPu_NSeGm1VYANo6DBmlxfFwC39G7qnNY_"
-                    hrefLang="en"
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    aria-label="Visit Mixsoon official website"
-                    title="Visit Mixsoon official website"
-                  >
-                    <Button className="rounded-2xl bg-[#F7DFDE] px-3 py-2 shadow-lg hover:bg-amber-200">
-                      ✨ MIXSOON CODE :{' '}
-                      <span className="underline">GLOW10</span>
-                    </Button>
-                  </Link>
-                </li>
-              </ul>
               <Result answers={answers} />
               <Button
-                className="mt-9 rounded-2xl bg-[#F7DFDE] p-2 text-2xl shadow-lg hover:bg-amber-200"
-                onClick={() => {
-                  setIsStarted(false)
-                  setShowResults(false)
-                  setAnswers([])
-                  setStep(0)
-                }}
+                className="mt-6 rounded-lg bg-[#F7DFDE] px-4 py-2 text-lg shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200"
+                onClick={handleRestart}
               >
                 Restart Quiz
               </Button>
             </div>
           ) : (
-            <div className="flex w-4/5 flex-col flex-wrap items-center justify-center p-2 text-center">
-              <div className="h-4 w-full rounded-lg bg-gray-300">
+            <div className="flex w-full max-w-xl flex-col items-center justify-center p-4 text-center">
+              <div className="h-4 w-full rounded-full bg-gray-300">
                 <div
-                  className="h-4 rounded-lg bg-[#F7DFDE]"
+                  className="transition-width h-4 rounded-full bg-[#F7DFDE] duration-300"
                   style={{ width: `${((step + 1) / questions.length) * 70}%` }}
                 />
               </div>
-
-              <div className="mb-10 mt-12 text-4xl font-bold ph:text-2xl">
+              <div className="mb-6 mt-8 text-2xl font-bold ph:text-xl">
                 {questions[step].question}
               </div>
-              <div className="mb-10 flex flex-wrap justify-center gap-2">
+              <div className="mb-6 flex flex-wrap justify-center gap-3">
                 {questions[step].options.map((option, index) => (
                   <Button
                     key={index}
-                    className="rounded-2xl bg-[#F7DFDE] p-2 text-2xl shadow-lg hover:bg-amber-200 ph:text-lg"
+                    className="rounded-lg bg-[#F7DFDE] px-4 py-2 text-lg shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200 ph:px-3 ph:py-2"
                     onClick={() => handleAnswer(option)}
                   >
                     {option}
@@ -242,7 +192,7 @@ export default function Quizz() {
               </div>
               {step !== 0 && (
                 <Button
-                  className="rounded-3xl bg-[#F7F0DE] px-4 py-2 text-2xl font-bold hover:bg-amber-200 ph:text-lg"
+                  className="rounded-lg bg-[#F7F0DE] px-3 py-2 text-lg font-bold transition-transform duration-200 hover:scale-105 hover:bg-amber-200"
                   onClick={handleBack}
                 >
                   Back
@@ -252,6 +202,7 @@ export default function Quizz() {
           )}
         </div>
       </div>
+      <Footer />
     </>
   )
 }

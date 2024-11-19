@@ -39,9 +39,8 @@ import {
   sensitiveAcne,
 } from '@/store/sensitive'
 import Products from '@/type/products'
-import LinkImage from './linkImage'
-import Link from 'next/link'
-import Button from './button'
+import LinkImage from './LinkImage'
+import Button from './Button'
 
 interface ResultProps {
   answers: string[]
@@ -127,10 +126,10 @@ export default function Result({ answers }: ResultProps) {
       <p>No matching products found. Please try a different combination.</p>
     )
   }
-  let stepCounter = 1 // Step 번호 관리용 카운터
+  let stepCounter = 1
 
   return (
-    <div className="flex flex-wrap items-center justify-center gap-3 text-center">
+    <div className="flex flex-wrap items-center justify-center gap-6 text-center">
       {Object.entries(recommendedProducts)
         .filter(([, product]) => product)
         .map(([step, product]) => {
@@ -144,32 +143,34 @@ export default function Result({ answers }: ResultProps) {
           return (
             <div
               key={step}
-              className="m-4 flex max-w-[18rem] flex-col items-center justify-center"
+              className="flex max-w-[20rem] flex-col items-center justify-center rounded-lg bg-white p-6 shadow-md transition-shadow duration-300 hover:shadow-lg"
             >
               {isStepVisible && (
-                <h1 className="text-lg font-bold sm:text-xl md:text-2xl">
+                <h1 className="mb-2 text-xl font-bold text-gray-800 sm:text-2xl">
                   Step {stepCounter++}
                 </h1>
               )}
-              <h3 className="mb-3 text-base font-semibold sm:text-lg md:text-xl">
+              <h3 className="mb-2 text-lg font-semibold text-gray-700 sm:text-xl">
                 {step}
               </h3>
-              <hr className="border-t-2 border-black" />
-              <p className="mb-4 text-sm sm:text-base md:text-lg">
+              <hr className="mb-4 w-full border-t-2 border-gray-300" />
+              <p className="mb-4 text-sm text-gray-600 sm:text-base md:text-lg">
                 {product.name}
               </p>
-              <Link
+              <a
                 href={product.link}
                 hrefLang="en"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 referrerPolicy="origin"
+                className="w-full"
+                aria-label={`Buy ${product.name} from ${product.store}`}
               >
                 <LinkImage>{product.link}</LinkImage>
-                <Button className="mt-2 rounded-2xl bg-[#F7DFDE] px-3 py-2 shadow-lg hover:bg-amber-200">
+                <Button className="mt-4 w-full rounded-lg bg-[#F7DFDE] px-4 py-2 text-base font-semibold text-gray-800 shadow-md transition-all duration-300 hover:scale-105 hover:bg-amber-200">
                   Buy
                 </Button>
-              </Link>
+              </a>
             </div>
           )
         })}
