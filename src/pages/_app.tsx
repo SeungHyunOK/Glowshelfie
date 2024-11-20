@@ -1,7 +1,8 @@
 import type { AppProps } from 'next/app'
 import '@/styles/global.css'
-import Nav from '@/components/nav'
+import Nav from '@/components/Nav'
 import Head from 'next/head'
+import Footer from '@/components/Footer'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -17,6 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <Nav />
       <Component {...pageProps} />
+      <Footer />
     </>
   )
 }
