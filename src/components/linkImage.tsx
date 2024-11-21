@@ -23,7 +23,7 @@ const LinkImage: React.FC<LinkImageProps> = ({ children }) => {
   useEffect(() => {
     const fetchMetaImage = async () => {
       if (!isValidUrl(children)) {
-        setImageUrl('/images/OOPS.png')
+        setImageUrl('/images/Loading_img.png')
         setLoading(false)
         return
       }

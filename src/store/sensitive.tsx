@@ -272,51 +272,51 @@ export const sensitiveDark: Products = {
 
 export const sensitiveAll: Products = {
   'Oil Cleanser (1 time a day PM only)': {
-    name: 'Example Oil Cleanser',
-    link: 'https://example.com/oilcleanser',
+    name: 'ma:nyo - Pure Cleansing Oil',
+    link: 'https://www.yesstyle.com/en/ma-nyo-pure-cleansing-oil-200ml/info.html/pid.1112313883',
   },
   'Cleanser (2 times a day)': {
-    name: 'Example Cleanser',
-    link: 'https://example.com/cleanser',
+    name: 'ANUA - HEARTLEAF QUERCETINOL PORE DEEP CLEANSING FOAM',
+    link: 'https://www.yesstyle.com/en/anua-heartleaf-quercetinol-pore-deep-cleansing-foam-150ml/info.html/pid.1129006061?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
   'Toner (2 times a day)': {
-    name: 'Example Toner',
-    link: 'https://example.com/toner',
+    name: 'Beauty of Joseon - Glow Replenishing Rice Milk',
+    link: 'https://www.yesstyle.com/en/beauty-of-joseon-glow-replenishing-rice-milk-150ml/info.html/pid.1129049939?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
   'Essence (1~2 time a day)': {
-    name: 'Example Essence',
-    link: 'https://example.com/Essence',
+    name: 'mixsoon - Bean Essence',
+    link: 'https://www.yesstyle.com/en/mixsoon-bean-essence-50ml/info.html/pid.1105987458?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
   'Toner Pads (2~3 times a week)': {
-    name: 'Example Toner Pads',
-    link: 'https://example.com/tonerpads',
+    name: 'medicube - Zero Pore Pad 2.0',
+    link: 'https://www.yesstyle.com/en/medicube-zero-pore-pad-2-0-70-pads/info.html/pid.1124067239?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
   'Treatments (2~3 times a week)': {
-    name: 'Example Treatments',
-    link: 'https://example.com/treatments',
+    name: 'medicube - One Day Exosome Shot Pore Ampoule 7500',
+    link: 'https://www.yesstyle.com/en/medicube-one-day-exosome-shot-pore-ampoule-7500-30ml/info.html/pid.1129520455?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
   'Sheet Masks (2~3 times a week)': {
-    name: 'Example Sheet Masks',
-    link: 'https://example.com/sheetmasks',
+    name: 'Biodance - Bio Collagen Real Deep Mask Set',
+    link: 'https://www.yesstyle.com/en/biodance-bio-collagen-real-deep-mask-set-34g-x-4-sheets/info.html/pid.1131989391?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
   'Serum-First (2 times a day)': {
-    name: 'Example Serum 1',
-    link: 'https://example.com/serum1',
+    name: 'Purito SEOUL - Wonder Releaf Centella Serum Unscented',
+    link: 'https://www.yesstyle.com/en/purito-seoul-wonder-releaf-centella-serum-unscented-60ml/info.html/pid.1127264626?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
   'Serum-Second (2 times a day)': {
-    name: 'Example Serum 2',
-    link: 'https://example.com/serum2',
+    name: 'AXIS - Y - Dark Spot Correcting Glow Serum',
+    link: 'https://www.yesstyle.com/en/axis-y-dark-spot-correcting-glow-serum-50ml/info.html/pid.1078919512?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
   'Eye cream (2 times a day)': {
-    name: 'Example Eye Cream',
-    link: 'https://example.com/eyecream',
+    name: 'SKIN 1004 - Madagascar Centella Probio-Cica Bakuchiol Eye Cream',
+    link: 'https://www.yesstyle.com/en/skin-1004-madagascar-centella-probio-cica-bakuchiol-eye-cream-20ml/info.html/pid.1124363690?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
   'Moisturizer (2 times a day)': {
-    name: 'Example Moisturizer',
-    link: 'https://example.com/moisturizer',
+    name: 'La Roche-Posay - Cicaplast Baume B5+ Ultra-Repairing Soothing Balm',
+    link: 'https://www.yesstyle.com/en/la-roche-posay-cicaplast-baume-b5-ultra-repairing-soothing-balm/info.html/pid.1125793072?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
   'Sunscreen (1 time a day AM only)': {
-    name: 'Example Sunscreen',
-    link: 'https://example.com/sunscreen',
+    name: 'Beauty of Joseon - Relief Sun Aqua-fresh',
+    link: 'https://www.yesstyle.com/en/beauty-of-joseon-relief-sun-aqua-fresh-50ml/info.html/pid.1130222654?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
 }
