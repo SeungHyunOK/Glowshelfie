@@ -167,7 +167,7 @@ export default function Quizz() {
           <div className="flex flex-col items-center justify-center text-center">
             <span className="mb-8 flex flex-col gap-8 font-bold ph:mb-4 ph:gap-4 tab:mb-6 tab:gap-6">
               <h1 className="text-4xl ph:text-lg tab:text-2xl">
-                🐰 Here is your personalized Korean skincare routine💓✨
+                🐰 Your personalized Korean skincare routine💓✨
               </h1>
               <h2 className="text-2xl ph:text-sm tab:text-lg">
                 ✨ USE DISCOUNT & REWARD CODE TO SAVE MONEY ✨
@@ -187,7 +187,7 @@ export default function Quizz() {
               </li>
               <li className="inline-block rounded-lg bg-[#F7DFDE] px-4 py-2 shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200">
                 <a
-                  href="https://www.yesstyle.com/en/home.html?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer"
+                  href="https://global.oliveyoung.com/?rwardCode=GLOWSHELFIE1&utm_source=influencers"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="OLIVE YOUNG coupon code GLOWSHELFIE1"
