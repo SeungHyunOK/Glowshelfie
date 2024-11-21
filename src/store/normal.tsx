@@ -263,3 +263,54 @@ export const normalDark: Products = {
     link: 'https://www.yesstyle.com/en/beauty-of-joseon-relief-sun-aqua-fresh-50ml/info.html/pid.1130222654?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
 }
+
+export const normalAll: Products = {
+  'Oil Cleanser (1 time a day PM only)': {
+    name: 'ma:nyo - Pure Cleansing Oil',
+    link: 'https://www.yesstyle.com/en/ma-nyo-pure-cleansing-oil-200ml/info.html/pid.1112313883?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+  },
+  'Cleanser (2 times a day)': {
+    name: 'ANUA - HEARTLEAF QUERCETINOL PORE DEEP CLEANSING FOAM',
+    link: 'https://www.yesstyle.com/en/anua-heartleaf-quercetinol-pore-deep-cleansing-foam-150ml/info.html/pid.1129006061?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+  },
+  'Toner (2 times a day)': {
+    name: 'Anua - Rice 70 Glow Milky Toner',
+    link: 'https://www.yesstyle.com/en/anua-rice-70-glow-milky-toner-250ml/info.html/pid.1129917448?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+  },
+  'Essence (1~2 time a day)': {
+    name: 'COSRX - Advanced Snail 96 Mucin Power Essence',
+    link: 'https://www.yesstyle.com/en/cosrx-advanced-snail-96-mucin-power-essence-100ml/info.html/pid.1052684695?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+  },
+  'Toner Pads (2~3 times a week)': {
+    name: 'medicube - Zero Pore Pad 2.0',
+    link: 'https://www.yesstyle.com/en/medicube-zero-pore-pad-2-0-70-pads/info.html/pid.1124067239?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+  },
+  'Treatments (2~3 times a week)': {
+    name: 'medicube - One Day Exosome Shot Pore Ampoule 7500',
+    link: 'https://www.yesstyle.com/en/medicube-one-day-exosome-shot-pore-ampoule-7500-30ml/info.html/pid.1129520455?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+  },
+  'Sheet Masks (2~3 times a week)': {
+    name: 'Biodance - Bio Collagen Real Deep Mask Set',
+    link: 'https://www.yesstyle.com/en/biodance-bio-collagen-real-deep-mask-set-34g-x-4-sheets/info.html/pid.1131989391?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+  },
+  'Serum-First (2 times a day)': {
+    name: 'Beauty of Joseon - Glow Serum',
+    link: 'https://www.yesstyle.com/en/beauty-of-joseon-glow-serum-30ml/info.html/pid.1089210994?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+  },
+  'Serum-Second (2 times a day)': {
+    name: 'AXIS - Y - Dark Spot Correcting Glow Serum',
+    link: 'https://www.yesstyle.com/en/axis-y-dark-spot-correcting-glow-serum-50ml/info.html/pid.1078919512?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+  },
+  'Eye cream (2 times a day)': {
+    name: 'SKIN 1004 - Madagascar Centella Probio-Cica Bakuchiol Eye Cream',
+    link: 'https://www.yesstyle.com/en/skin-1004-madagascar-centella-probio-cica-bakuchiol-eye-cream-20ml/info.html/pid.1124363690?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+  },
+  'Moisturizer (2 times a day)': {
+    name: 'La Roche-Posay - Cicaplast Baume B5+ Ultra-Repairing Soothing Balm',
+    link: 'https://www.yesstyle.com/en/la-roche-posay-cicaplast-baume-b5-ultra-repairing-soothing-balm/info.html/pid.1125793072?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+  },
+  'Sunscreen (1 time a day AM only)': {
+    name: 'Beauty of Joseon - Relief Sun Aqua-fresh',
+    link: 'https://www.yesstyle.com/en/beauty-of-joseon-relief-sun-aqua-fresh-50ml/info.html/pid.1130222654?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+  },
+}
