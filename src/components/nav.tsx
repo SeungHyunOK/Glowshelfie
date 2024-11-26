@@ -1,10 +1,14 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Nav() {
   return (
     <>
       <div className="flex h-[4.375rem] w-full flex-wrap items-center justify-between bg-black bg-opacity-20 px-10 shadow-md transition-all duration-300 hover:shadow-lg ph:px-2">
-        <div className="flex cursor-pointer flex-wrap items-center gap-[0.6rem] hover:opacity-80 ph:gap-0">
+        <Link
+          className="flex cursor-pointer flex-wrap items-center gap-[0.6rem] hover:opacity-80 ph:gap-0"
+          href={'/'}
+        >
           <div className="relative h-[3.1rem] w-[3.1rem] ph:h-6 ph:w-6">
             <Image
               src="/images/Glowshelfie_logo.png"
@@ -17,7 +21,7 @@ export default function Nav() {
           <span className="text-[3.125rem] font-bold text-black transition-transform duration-300 hover:scale-105 ph:text-2xl">
             Glowshelfie
           </span>
-        </div>
+        </Link>
 
         <ul className="flex gap-5 ph:gap-2">
           <li className="transition-transform duration-300 hover:scale-110">
