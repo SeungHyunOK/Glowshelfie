@@ -165,6 +165,14 @@ export default function Quiz() {
 function StartScreen({ onStart }: { onStart: () => void }) {
   return (
     <>
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-MQXJ72SJ"
+          height="0"
+          width="0"
+          className="display:none;visibility:hidden"
+        ></iframe>
+      </noscript>
       <span className="mb-14 flex flex-col gap-12 text-center font-bold ph:mb-6 ph:gap-4 tab:mb-10 tab:gap-8">
         <h1 className="text-6xl leading-tight text-gray-800 ph:text-2xl tab:text-4xl">
           🐰 Let&apos;s build your personalized Korean{' '}

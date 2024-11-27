@@ -36,6 +36,14 @@ export default function Home() {
 
   return (
     <>
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-MQXJ72SJ"
+          height="0"
+          width="0"
+          className="display:none;visibility:hidden"
+        ></iframe>
+      </noscript>
       <Head>
         <title>Glowshelfie - Your Personalized Skincare Journey</title>
         <meta
