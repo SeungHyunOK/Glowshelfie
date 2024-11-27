@@ -8,6 +8,8 @@
     @apply font-notoSans;
     width: 100%;
     overflow-x: hidden;
-    background-image: url('/images/glowshelfe_background.png');
+    background-image: url('/images/glowshelfe_background.webp');
+    background-size: 'cover';
+    background-position: 'center';
   }
 }

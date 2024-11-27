@@ -144,7 +144,7 @@ export default function Result({ answers }: ResultProps) {
   let stepCounter = 1
 
   return (
-    <div className="flex flex-wrap items-center justify-center gap-7 text-center ph:gap-3 tab:gap-5">
+    <div className="grid grid-cols-4 gap-6 ph:grid-cols-1 ph:gap-2 tab:grid-cols-2 tab:gap-4">
       {Object.entries(recommendedProducts)
         .filter(([, product]) => product)
         .map(([step, product]) => {
@@ -158,18 +158,20 @@ export default function Result({ answers }: ResultProps) {
           return (
             <div
               key={step}
-              className="flex h-[30rem] max-w-[18rem] flex-col items-center justify-center rounded-2xl bg-white p-3 ph:h-[29rem]"
+              className="flex flex-col items-center justify-between rounded-2xl bg-white p-3"
             >
               {isStepVisible && (
                 <h1 className="text-2xl font-bold ph:text-sm tab:text-lg">
                   Step {stepCounter++}
                 </h1>
               )}
-              <h2 className="text-lg font-semibold ph:text-sm tab:text-base">
-                {step}
-              </h2>
-              <hr className="my-2 w-full border-t-2 border-black" />
-              <h3 className="text-base ph:text-sm">{product.name}</h3>
+              <div>
+                <h2 className="text-lg font-semibold ph:text-sm tab:text-base">
+                  {step}
+                </h2>
+                <hr className="my-2 w-full border-t-2 border-black" />
+                <h3 className="text-base ph:text-sm">{product.name}</h3>
+              </div>
               <a
                 href={product.link}
                 hrefLang="en"
@@ -178,7 +180,7 @@ export default function Result({ answers }: ResultProps) {
                 referrerPolicy="origin"
               >
                 <LinkImage>{product.link}</LinkImage>
-                <Button className="mt-4 rounded-2xl bg-[#F7DFDE] px-14 py-2 shadow-lg hover:bg-amber-200 ph:w-full">
+                <Button className="mt-4 rounded-2xl bg-[#F7DFDE] px-14 py-2 shadow-lg hover:bg-amber-200 ph:w-full tab:w-full">
                   Buy
                 </Button>
               </a>

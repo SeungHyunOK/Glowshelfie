@@ -9,9 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        notoSerif: ['"Noto Serif Display"', 'serif'],
         notoSans: ['"Noto Sans"', 'sans-serif'],
-        notoSerifRegular: ['"Noto Serif"', 'serif'],
       },
       colors: {
         primary: '#FFF5E4',

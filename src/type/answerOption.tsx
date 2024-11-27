@@ -10,3 +10,4 @@ export type AnswerOption =
   | 'Hydrating'
   | 'Anti-aging & Wrinkles'
   | 'Pores'
+  | 'Dark spot & Acne & Blemish & Pores'
