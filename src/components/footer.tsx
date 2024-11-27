@@ -1,3 +1,23 @@
+type SocialLinkProps = {
+  href: string
+  text: string
+  ariaLabel: string
+}
+
+const SocialLink: React.FC<SocialLinkProps> = ({ href, text, ariaLabel }) => (
+  <a
+    href={href}
+    hrefLang="en"
+    target="_blank"
+    rel="noopener noreferrer"
+    referrerPolicy="origin"
+    aria-label={ariaLabel}
+    className="transition-opacity duration-300 hover:opacity-80"
+  >
+    {text}
+  </a>
+)
+
 export default function Footer() {
   return (
     <footer className="bg-black py-6 text-white">
@@ -5,35 +25,23 @@ export default function Footer() {
         <h1 className="text-lg ph:text-sm tab:text-base">
           &copy; 2024 Glowshelfie. All rights reserved.
         </h1>
-        <div className="mt-8 flex gap-6 text-lg font-bold ph:mt-4 tab:mt-6">
-          <a
+        <nav className="mt-8 flex gap-6 text-lg font-bold ph:mt-4 tab:mt-6">
+          <SocialLink
             href="https://www.instagram.com/glowshelfie?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-            hrefLang="en"
-            target="_blank"
-            rel="noopener noreferrer"
-            referrerPolicy="origin"
-          >
-            Instagram
-          </a>
-          <a
+            text="Instagram"
+            ariaLabel="Visit Glowshelfie's Instagram"
+          />
+          <SocialLink
             href="https://www.tiktok.com/@glowshelfie?is_from_webapp=1&sender_device=pc"
-            hrefLang="en"
-            target="_blank"
-            rel="noopener noreferrer"
-            referrerPolicy="origin"
-          >
-            Tiktok
-          </a>
-          <a
+            text="TikTok"
+            ariaLabel="Visit Glowshelfie's TikTok"
+          />
+          <SocialLink
             href="https://youtube.com/@glowshelfie?feature=shared"
-            hrefLang="en"
-            target="_blank"
-            rel="noopener noreferrer"
-            referrerPolicy="origin"
-          >
-            Youtube
-          </a>
-        </div>
+            text="YouTube"
+            ariaLabel="Visit Glowshelfie's YouTube channel"
+          />
+        </nav>
       </div>
     </footer>
   )
