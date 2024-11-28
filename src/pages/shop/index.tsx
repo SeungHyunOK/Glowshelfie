@@ -92,7 +92,7 @@ const Shop: FC = () => {
                 ))
               ) : (
                 <p className="text-xl ph:text-sm tab:text-lg">
-                  브랜드 정보를 불러올 수 없습니다.
+                  Unable to retrieve brand information.
                 </p>
               )}
             </div>

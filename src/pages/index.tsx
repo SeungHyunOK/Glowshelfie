@@ -55,7 +55,7 @@ export default function Home() {
         <meta property="og:url" content="https://glowshelfie.vercel.app/" />
         <meta
           property="og:image"
-          content="https://glowshelfie.vercel.app/images/og_image.png"
+          content="https://glowshelfie.vercel.app/images/Glowshelfie_logo.png"
         />
       </Head>
 
