@@ -60,6 +60,12 @@ export default function Home() {
       </Head>
 
       <div className="min-w-screen m-10 flex flex-wrap items-center justify-around gap-10 ph:flex-col ph:justify-center ph:gap-5 tab:flex-col tab:justify-center">
+        <div
+          className="fb-like"
+          data-share="true"
+          data-width="450"
+          data-show-faces="true"
+        ></div>
         <section className="w-5/12 rounded-2xl bg-[#D9D9D9] p-10 text-center shadow-lg shadow-gray-500 ph:w-full ph:p-4 tab:w-11/12 tab:p-6">
           <div className="mb-10 flex flex-col gap-12 text-center font-bold ph:mb-4 ph:gap-6 tab:mb-6">
             <h1 className="text-6xl leading-tight text-gray-800 ph:text-2xl tab:text-4xl">
