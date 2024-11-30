@@ -64,8 +64,11 @@ function Home() {
           </div>
           <Link href="/quiz">
             <Button
-              className="animate-pulseGrow rounded-lg bg-[#F7DFDE] p-3 text-4xl font-bold shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200 ph:text-lg tab:text-2xl"
+              className="rounded-lg bg-[#F7DFDE] p-3 text-4xl font-bold shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200 ph:text-lg tab:text-2xl"
               aria-label="Start your personalized quiz"
+              style={{
+                animation: 'pulseGrow 2s infinite',
+              }}
             >
               Let&apos;s Start! 🐰💓✨
             </Button>
