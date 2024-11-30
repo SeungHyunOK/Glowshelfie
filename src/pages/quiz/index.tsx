@@ -140,7 +140,6 @@ export default function Quiz() {
         <meta property="og:site_name" content="Glowshelfie" />
         <link rel="canonical" href="https://glowshelfie.vercel.app/quiz" />
       </Head>
-
       <div className="m-5 flex w-5/6 flex-col items-center justify-center rounded-lg bg-[#D9D9D9] p-14 shadow-md shadow-gray-300 ph:p-6 tab:p-10">
         {!isStarted ? (
           <StartScreen onStart={handleStart} />
@@ -176,7 +175,8 @@ function StartScreen({ onStart }: { onStart: () => void }) {
         </h2>
       </span>
       <Button
-        className="rounded-lg bg-[#F7DFDE] p-4 text-4xl font-bold shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200 ph:text-lg tab:text-2xl"
+        className="animate-pulseGrow rounded-lg bg-[#F7DFDE] p-3 text-4xl font-bold shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200 ph:text-lg tab:text-2xl"
+        aria-label="Start your personalized quiz"
         onClick={onStart}
       >
         Let&apos;s Start! 🐰💓✨
