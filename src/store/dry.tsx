@@ -19,8 +19,8 @@ export const dryPores: Products = {
     link: 'https://www.yesstyle.com/en/medicube-one-day-exosome-shot-pore-ampoule-7500-30ml/info.html/pid.1129520455?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
   'Treatments (2~3 times a week)': {
-    name: 'medicube - Zero Pore Pad 2.0',
-    link: 'https://www.yesstyle.com/en/medicube-zero-pore-pad-2-0-70-pads/info.html/pid.1124067239?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    name: 'medicube - One Day Exosome Shot Pore Ampoule 7500',
+    link: 'https://www.yesstyle.com/en/medicube-one-day-exosome-shot-pore-ampoule-7500-30ml/info.html/pid.1129520455?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
   'Sheet Masks (2~3 times a week)': {
     name: 'Biodance - Bio Collagen Real Deep Mask Set',
@@ -126,8 +126,8 @@ export const dryHydrating: Products = {
     link: 'https://www.yesstyle.com/en/skin-1004-madagascar-centella-probio-cica-bakuchiol-eye-cream-20ml/info.html/pid.1124363690?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
   'Moisturizer (2 times a day)': {
-    name: 'Anua - Heartleaf 70 Intense Calming Cream',
-    link: 'https://www.yesstyle.com/en/anua-heartleaf-70-intense-calming-cream-50ml/info.html/pid.1096801874?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    name: 'La Roche-Posay - Cicaplast Baume B5+ Ultra-Repairing Soothing Balm',
+    link: 'https://www.yesstyle.com/en/la-roche-posay-cicaplast-baume-b5-ultra-repairing-soothing-balm/info.html/pid.1125793072?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
   'Sunscreen (1 time a day AM only)': {
     name: 'Beauty of Joseon - Relief Sun',
@@ -261,8 +261,8 @@ export const dryAcne: Products = {
     link: 'https://www.yesstyle.com/en/skin-1004-madagascar-centella-probio-cica-bakuchiol-eye-cream-20ml/info.html/pid.1124363690?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
   'Moisturizer (2 times a day)': {
-    name: 'Dr. Althea - 345 Relief Cream',
-    link: 'https://www.yesstyle.com/en/dr-althea-345-relief-cream-renewed-50ml/info.html/pid.1124698946?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    name: 'La Roche-Posay - Cicaplast Baume B5+ Ultra-Repairing Soothing Balm',
+    link: 'https://www.yesstyle.com/en/la-roche-posay-cicaplast-baume-b5-ultra-repairing-soothing-balm/info.html/pid.1125793072?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
   },
   'Sunscreen (1 time a day AM only)': {
     name: 'Beauty of Joseon - Relief Sun',
