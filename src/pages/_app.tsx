@@ -4,9 +4,29 @@ import Nav from '@/components/nav'
 import Head from 'next/head'
 import Footer from '@/components/footer'
 import Script from 'next/script'
+import { useEffect } from 'react'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
 const App = ({ Component, pageProps }: AppProps) => {
   const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID
+  const FACEBOOK_APP_ID = process.env.NEXT_PUBLIC_FACEBOOK_APP_ID
+  useEffect(() => {
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: FACEBOOK_APP_ID,
+        cookie: true,
+        xfbml: true,
+        version: 'v21.0',
+      })
+    }
+
+    const script = document.createElement('script')
+    script.src = 'https://connect.facebook.net/en_US/sdk.js'
+    script.async = true
+    script.defer = true
+    document.body.appendChild(script)
+  }, [FACEBOOK_APP_ID])
 
   return (
     <>

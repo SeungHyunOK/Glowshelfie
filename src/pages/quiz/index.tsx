@@ -11,7 +11,6 @@ interface Question {
 }
 
 export default function Quiz() {
-  const [isStarted, setIsStarted] = useState(false)
   const [step, setStep] = useState(0)
   const [answers, setAnswers] = useState<AnswerOption[]>([])
   const [showResults, setShowResults] = useState(false)
@@ -50,11 +49,6 @@ export default function Quiz() {
     },
   ]
 
-  const handleStart = () => {
-    setIsStarted(true)
-    localStorage.setItem('quiz_isStarted', 'true')
-  }
-
   const handleBack = () => {
     const prevStep = Math.max(0, step - 1)
     setStep(prevStep)
@@ -62,13 +56,11 @@ export default function Quiz() {
   }
 
   const handleRestart = () => {
-    setIsStarted(false)
     setShowResults(false)
     setAnswers([])
     setStep(0)
     localStorage.removeItem('quiz_answers')
     localStorage.removeItem('quiz_step')
-    localStorage.removeItem('quiz_isStarted')
     localStorage.removeItem('quiz_showResults')
   }
 
@@ -76,7 +68,6 @@ export default function Quiz() {
     if (typeof window !== 'undefined') {
       const savedAnswers = localStorage.getItem('quiz_answers')
       const savedStep = localStorage.getItem('quiz_step')
-      const savedIsStarted = localStorage.getItem('quiz_isStarted') === 'true'
       const savedShowResults =
         localStorage.getItem('quiz_showResults') === 'true'
 
@@ -87,7 +78,6 @@ export default function Quiz() {
           setStep(stepValue)
         }
       }
-      setIsStarted(savedIsStarted)
       setShowResults(savedShowResults)
     }
   }, [questions.length])
@@ -141,9 +131,7 @@ export default function Quiz() {
         <link rel="canonical" href="https://glowshelfie.vercel.app/quiz" />
       </Head>
       <div className="m-5 flex w-5/6 flex-col items-center justify-center rounded-lg bg-[#D9D9D9] p-14 shadow-md shadow-gray-300 ph:p-6 tab:p-10">
-        {!isStarted ? (
-          <StartScreen onStart={handleStart} />
-        ) : isLoading ? (
+        {isLoading ? (
           <LoadingScreen />
         ) : showResults ? (
           <ResultsScreen answers={answers} onRestart={handleRestart} />
@@ -161,40 +149,16 @@ export default function Quiz() {
   )
 }
 
-function StartScreen({ onStart }: { onStart: () => void }) {
-  return (
-    <>
-      <span className="mb-14 flex flex-col gap-12 text-center font-bold ph:mb-6 ph:gap-4 tab:mb-10 tab:gap-8">
-        <h1 className="text-6xl leading-tight text-gray-800 ph:text-2xl tab:text-4xl">
-          🐰 Let&apos;s build your personalized Korean{' '}
-          <span className="text-pink-600">Skincare Routine</span> 💓✨
-        </h1>
-        <h2 className="text-4xl ph:text-lg tab:text-2xl">
-          ✨ Take this quiz to find out which routine is perfect for your skin
-          👸✨
-        </h2>
-      </span>
-      <Button
-        className="rounded-lg bg-[#F7DFDE] p-3 text-4xl font-bold shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200 ph:text-lg tab:text-2xl"
-        aria-label="Start your personalized quiz"
-        style={{
-          animation: 'pulseGrow 2s infinite',
-        }}
-        onClick={onStart}
-      >
-        Let&apos;s Start! 🐰💓✨
-      </Button>
-    </>
-  )
-}
-
 function LoadingScreen() {
   return (
     <div className="flex flex-col items-center justify-center text-center">
-      <h2 className="mb-6 text-4xl font-bold ph:text-lg tab:text-2xl">
+      <h2 className="mb-6 animate-bounce text-4xl font-bold ph:text-lg tab:text-2xl">
         ✨ Loading your results... ✨
       </h2>
-      <div className="h-10 w-10 animate-spin rounded-full border-4 border-pink-600 border-t-transparent"></div>
+      <div className="relative h-10 w-10">
+        <div className="absolute inset-0 animate-spin rounded-full border-4 border-pink-600 border-t-transparent"></div>
+        <div className="absolute inset-0 rounded-full border-4 border-gray-300 opacity-30"></div>
+      </div>
     </div>
   )
 }
@@ -217,7 +181,7 @@ function ResultsScreen({
         </h2>
       </span>
       <ul className="mb-8 flex flex-wrap justify-center gap-6 text-2xl font-bold ph:mb-4 ph:grid-cols-2 ph:gap-2 ph:text-sm tab:mb-6 tab:gap-4 tab:text-lg">
-        <li className="inline-block flex-1 basis-2/5 rounded-lg bg-[#F7DFDE] px-4 py-2 shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200">
+        <li className="inline-block flex-1 basis-2/5 rounded-lg bg-[#F7DFDE] px-4 py-2 shadow-md transition-transform duration-300 hover:rotate-1 hover:scale-110 hover:bg-amber-200">
           <a
             href="https://www.yesstyle.com/en/home.html?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer"
             target="_blank"
@@ -228,7 +192,7 @@ function ResultsScreen({
           </a>
           <h1 className="underline">GLOWSHELFIE0</h1>
         </li>
-        <li className="inline-block flex-1 basis-2/5 rounded-lg bg-[#F7DFDE] px-4 py-2 shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200">
+        <li className="inline-block flex-1 basis-2/5 rounded-lg bg-[#F7DFDE] px-4 py-2 shadow-md transition-transform duration-300 hover:rotate-1 hover:scale-110 hover:bg-amber-200">
           <a
             href="https://global.oliveyoung.com/?rwardCode=GLOWSHELFIE1&utm_source=influencers"
             target="_blank"
@@ -239,7 +203,7 @@ function ResultsScreen({
           </a>
           <h1 className="underline">GLOWSHELFIE1</h1>
         </li>
-        <li className="inline-block flex-1 basis-2/5 rounded-lg bg-[#F7DFDE] px-4 py-2 shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200">
+        <li className="inline-block flex-1 basis-2/5 rounded-lg bg-[#F7DFDE] px-4 py-2 shadow-md transition-transform duration-300 hover:rotate-1 hover:scale-110 hover:bg-amber-200">
           <a
             href="https://www.stylevana.com/en_US/"
             target="_blank"
@@ -250,7 +214,7 @@ function ResultsScreen({
           </a>
           <h1 className="underline">INF10GSHELFIE</h1>
         </li>
-        <li className="inline-block flex-1 basis-2/5 rounded-lg bg-[#F7DFDE] px-4 py-2 shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200">
+        <li className="inline-block flex-1 basis-2/5 rounded-lg bg-[#F7DFDE] px-4 py-2 shadow-md transition-transform duration-300 hover:rotate-1 hover:scale-110 hover:bg-amber-200">
           <a
             href="https://beautyofjoseon.com/?dt_id=1529790"
             target="_blank"
@@ -261,7 +225,7 @@ function ResultsScreen({
           </a>
           <h1 className="underline">GLOWSHELFIE</h1>
         </li>
-        <li className="inline-block flex-auto rounded-lg bg-[#F7DFDE] px-4 py-2 shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200">
+        <li className="inline-block flex-1 basis-2/5 rounded-lg bg-[#F7DFDE] px-4 py-2 shadow-md transition-transform duration-300 hover:rotate-1 hover:scale-110 hover:bg-amber-200">
           <a
             href="https://mixsoon.us/?srsltid=AfmBOooqvCdF_ShGTyE2bVQPu_NSeGm1VYANo6DBmlxfFwC39G7qnNY_"
             target="_blank"
@@ -309,7 +273,7 @@ function QuestionScreen({
     <div className="flex w-full flex-col items-center justify-center text-center">
       <div className="h-4 w-full rounded-full bg-gray-300">
         <div
-          className="transition-width h-4 rounded-full bg-[#F7DFDE] duration-300"
+          className="h-4 rounded-full bg-[#F7DFDE] transition-all duration-500"
           style={{ width: `${((step + 1) / totalSteps) * 70}%` }}
         />
       </div>
@@ -318,7 +282,7 @@ function QuestionScreen({
         {question.options.map((option, index) => (
           <Button
             key={index}
-            className="rounded-lg bg-[#F7DFDE] px-4 py-2 text-2xl shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200 ph:text-sm tab:text-lg"
+            className="rounded-lg bg-[#F7DFDE] px-4 py-2 text-2xl shadow-md transition-transform duration-200 hover:scale-110 hover:bg-amber-200 active:scale-95 ph:text-sm tab:text-lg"
             onClick={() => onAnswer(option)}
           >
             {option}

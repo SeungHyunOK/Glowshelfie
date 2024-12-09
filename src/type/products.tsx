@@ -1,9 +1,9 @@
-interface Product {
+export interface Product {
   name: string
   link: string
 }
 
-interface Products {
+export interface Products {
   'Oil Cleanser (1 time a day PM only)': Product | null
   'Cleanser (2 times a day)': Product | null
   'Toner (2 times a day)': Product | null
@@ -17,8 +17,6 @@ interface Products {
   'Moisturizer (2 times a day)': Product | null
   'Sunscreen (1 time a day AM only)': Product | null
 }
-
-export default Products
 
 /*
 export const sensitiveAll: Products = {

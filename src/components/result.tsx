@@ -43,7 +43,7 @@ import {
   sensitiveAcne,
   sensitiveAll,
 } from '@/store/sensitive'
-import Products from '@/type/products'
+import { Products } from '@/type/products'
 import LinkImage from '@/components/linkImage'
 import Button from '@/components/button'
 

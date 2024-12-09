@@ -6,7 +6,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   type?: 'button' | 'submit' | 'reset'
   disabled?: boolean
   className?: string
-  style?: React.CSSProperties // style 속성 추가
+  style?: React.CSSProperties
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -16,7 +16,7 @@ const Button: React.FC<ButtonProps> = ({
   disabled = false,
   className,
   style,
-  ...props // 나머지 속성 전달
+  ...props
 }) => {
   return (
     <button
@@ -24,8 +24,8 @@ const Button: React.FC<ButtonProps> = ({
       onClick={onClick}
       disabled={disabled}
       className={className}
-      style={style} // style 속성 적용
-      {...props} // 나머지 속성 전달
+      style={style}
+      {...props}
     >
       {children}
     </button>

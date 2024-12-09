@@ -1,4 +1,4 @@
-import Products from '@/type/products'
+import { Products } from '@/type/products'
 
 export const normalPores: Products = {
   'Oil Cleanser (1 time a day PM only)': {
