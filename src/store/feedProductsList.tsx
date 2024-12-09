@@ -255,6 +255,164 @@ export const List = {
       link: 'https://global.oliveyoung.com/product/detail?prdtNo=GA240925558',
     },
   ],
+  '18038972498339791': [
+    {
+      name: 'ma:nyo - Pure Cleansing Oil',
+      link: 'https://www.yesstyle.com/en/ma-nyo-pure-cleansing-oil-200ml/info.html/pid.1112313883?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'mixsoon - Centella Cleansing Foam',
+      link: 'https://www.yesstyle.com/en/mixsoon-centella-cleansing-foam-2024-version-150ml/info.html/pid.1118209017?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Anua - Heartleaf 77% Soothing Toner',
+      link: 'https://www.yesstyle.com/en/anua-heartleaf-77-soothing-toner-250ml/info.html/pid.1092372008?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'mixsoon - Essence Galactomyces Ferment',
+      link: 'https://www.yesstyle.com/en/mixsoon-essence-12-types-soondy-centella-asiatica/info.html/pid.1131126943?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Torriden - DIVE-IN Low Molecular Hyaluronic Acid Soothing Cream',
+      link: 'https://www.yesstyle.com/en/torriden-dive-in-low-molecular-hyaluronic-acid-soothing-cream-100ml/info.html/pid.1113454408?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Beauty of Joseon - Relief Sun',
+      link: 'https://www.yesstyle.com/en/beauty-of-joseon-relief-sun-50ml/info.html/pid.1107744417?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+  ],
+  '18313056109161431': [
+    {
+      name: 'SKIN 1004 - Madagascar Centella Light Cleansing Oil',
+      link: 'https://www.yesstyle.com/en/skin-1004-madagascar-centella-light-cleansing-oil-200ml/info.html/pid.1077182361?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Anua - Heartleaf Pore Control Cleansing Oil Mild',
+      link: 'https://www.yesstyle.com/en/anua-heartleaf-pore-control-cleansing-oil-mild-200ml/info.html/pid.1128989172',
+    },
+    {
+      name: 'AXIS - Y - Biome Resetting Moringa Cleansing Oil',
+      link: 'https://www.yesstyle.com/en/axis-y-biome-resetting-moringa-cleansing-oil-200ml/info.html/pid.1118178805',
+    },
+    {
+      name: 'Anua - Heartleaf Quercetinol Pore Deep Cleansing Foam',
+      link: 'https://www.yesstyle.com/en/anua-heartleaf-quercetinol-pore-deep-cleansing-foam-150ml/info.html/pid.1129006061?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Anua - Rice Enzyme Brightening Cleansing Powder',
+      link: 'https://www.yesstyle.com/en/anua-rice-enzyme-brightening-cleansing-powder-40g/info.html/pid.1129917446?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'AXIS - Y - Dark Spot Correcting Glow Toner',
+      link: 'https://www.yesstyle.com/en/axis-y-dark-spot-correcting-glow-toner-125ml/info.html/pid.1129633493?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Anua - Rice 70 Glow Milky Toner',
+      link: 'https://www.yesstyle.com/en/anua-rice-70-glow-milky-toner-250ml/info.html/pid.1129917448?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Beauty of Joseon - Glow Replenishing Rice Milk',
+      link: 'https://www.yesstyle.com/en/beauty-of-joseon-glow-replenishing-rice-milk-150ml/info.html/pid.1129049939?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Purito SEOUL - Wonder Releaf Centella Serum Unscented',
+      link: 'https://www.yesstyle.com/en/purito-seoul-wonder-releaf-centella-serum-unscented-60ml/info.html/pid.1127264626?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Anua NIACINAMIDE 10% + TXA 4% Dark Spot Correcting Serum',
+      link: 'https://www.yesstyle.com/en/anua-niacinamide-10-txa-4-serum-2024-version-30ml/info.html/pid.1126101447?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'numbuzin - No.5 Vitamin Concentrated Serum',
+      link: 'https://www.yesstyle.com/en/numbuzin-no-5-vitamin-concentrated-serum-30ml/info.html/pid.1124137872?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'SOME BY MI - Retinol Intense Advanced Triple Action Eye Cream',
+      link: 'https://www.yesstyle.com/en/list.html?q=somebymi%20eye&bpt=48?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Abib - Collagen Eye Crème Jericho Rose Tube',
+      link: 'https://www.yesstyle.com/en/abib-collagen-eye-cr%C3%A8me/info.html/pid.1125499526?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'AXIS - Y - Vegan Collagen Eye Serum',
+      link: 'https://www.yesstyle.com/en/axis-y-vegan-collagen-eye-serum-10ml/info.html/pid.1127471822?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'La Roche-Posay - Cicaplast Baume B5+ Ultra-Repairing Soothing Balm',
+      link: 'https://www.yesstyle.com/en/la-roche-posay-cicaplast-baume-b5-ultra-repairing-soothing-balm/info.html/pid.1125793072?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Dr. Althea - 345 Relief Cream',
+      link: 'Producthttps://www.yesstyle.com/en/dr-althea-345-relief-cream-renewed-50ml/info.html/pid.1124698946?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencerLink',
+    },
+    {
+      name: 'Anua - Heartleaf 70 Intense Calming Cream',
+      link: 'https://www.yesstyle.com/en/anua-heartleaf-70-intense-calming-cream-50ml/info.html/pid.1096801874?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+  ],
+  '18067626784724846': [
+    {
+      name: 'Anua - Heartleaf 77% Soothing Toner',
+      link: 'https://www.yesstyle.com/en/anua-heartleaf-77-soothing-toner-250ml/info.html/pid.1092372008?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Anua - Peach 77 Niacin Essence Toner',
+      link: 'https://www.yesstyle.com/en/anua-peach-77-niacin-essence-toner-250ml/info.html/pid.1125108339?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Anua - BHA 2% Gentle Exfoliating Toner',
+      link: 'https://www.yesstyle.com/en/anua-bha-2-gentle-exfoliating-toner-150ml/info.html/pid.1126065863?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: "I'm from - Rice Toner",
+      link: 'https://www.yesstyle.com/en/im-from-rice-toner-150ml/info.html/pid.1069348866?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Anua NIACINAMIDE 10% + TXA 4% Dark Spot Correcting Serum',
+      link: 'https://www.yesstyle.com/en/anua-niacinamide-10-txa-4-serum-2024-version-30ml/info.html/pid.1126101447?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'numbuzin - No.5 Vitamin Concentrated Serum',
+      link: 'https://www.yesstyle.com/en/numbuzin-no-5-vitamin-concentrated-serum-30ml/info.html/pid.1124137872?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Beauty of Joseon - Glow Serum',
+      link: 'https://www.yesstyle.com/en/beauty-of-joseon-glow-serum-30ml/info.html/pid.1089210994?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Anua - Peach 70 Niacin Serum',
+      link: 'https://www.yesstyle.com/en/anua-peach-70-niacin-serum-30ml/info.html/pid.1132099566?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'SKIN 1004 - Madagascar Centella Probio-Cica Intensive Ampoule',
+      link: 'https://www.yesstyle.com/en/skin-1004-madagascar-centella-probio-cica-intensive-ampoule-50ml/info.html/pid.1120208638?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'ma:nyo - Pure Cleansing Oil',
+      link: 'https://www.yesstyle.com/en/ma-nyo-pure-cleansing-oil-200ml/info.html/pid.1112313883?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'SKIN 1004 - Madagascar Centella Light Cleansing Oil',
+      link: 'https://www.yesstyle.com/en/skin-1004-madagascar-centella-light-cleansing-oil-200ml/info.html/pid.1077182361?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Anua - Heartleaf Pore Control Cleansing Oil',
+      link: 'https://www.yesstyle.com/en/anua-heartleaf-pore-control-cleansing-oil-200ml/info.html/pid.1118224587?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'KSECRET - SEOUL 1988 Cleansing Oil : Pine Cica 1% + Probiotics',
+      link: 'https://www.yesstyle.com/en/ksecret-seoul-1988-cleansing-oil-pine-cica-1-probiotics-200ml/info.html/pid.1130073210?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Beauty of Joseon - Relief Sun',
+      link: 'https://www.yesstyle.com/en/beauty-of-joseon-relief-sun-50ml/info.html/pid.1107744417?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'SKIN 1004 - Madagascar Centella Tea-Trica Soothing Sun Milk',
+      link: 'https://www.yesstyle.com/en/skin-1004-madagascar-centella-tea-trica-soothing-sun-milk-50ml/info.html/pid.1129356821?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+  ],
 }
 
 /*
