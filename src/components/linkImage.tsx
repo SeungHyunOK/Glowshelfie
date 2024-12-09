@@ -5,9 +5,16 @@ import Image from 'next/image'
 interface LinkImageProps {
   children: string
   className?: string
+  width?: number
+  height?: number
 }
 
-const LinkImage: React.FC<LinkImageProps> = ({ children }) => {
+const LinkImage: React.FC<LinkImageProps> = ({
+  children,
+  className,
+  width = 300,
+  height = 300,
+}) => {
   const [imageUrl, setImageUrl] = useState<string | null>(null)
   const [loading, setLoading] = useState<boolean>(true)
 
@@ -48,13 +55,13 @@ const LinkImage: React.FC<LinkImageProps> = ({ children }) => {
   }
 
   return (
-    <div>
+    <div className={className}>
       {loading ? (
         <Image
           src="/images/Loading_img.png"
           alt="Loading"
-          width={300}
-          height={300}
+          width={width}
+          height={height}
           priority={true}
           className="animate-pulse rounded-[1.5rem]"
         />
@@ -62,10 +69,11 @@ const LinkImage: React.FC<LinkImageProps> = ({ children }) => {
         <Image
           src={imageUrl!}
           alt="Preview"
-          width={300}
-          height={300}
+          width={width}
+          height={height}
           className="rounded-[1.5rem]"
           priority={true}
+          quality={90}
           onError={handleImageError}
         />
       )}

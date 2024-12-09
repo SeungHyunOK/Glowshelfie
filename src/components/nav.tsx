@@ -8,7 +8,7 @@ type SocialLinkProps = {
   ariaLabel: string
 }
 
-const SocialLink: React.FC<SocialLinkProps> = ({
+export const SocialLink: React.FC<SocialLinkProps> = ({
   href,
   imgSrc,
   altText,
@@ -38,7 +38,7 @@ const SocialLink: React.FC<SocialLinkProps> = ({
 
 export default function Nav() {
   return (
-    <nav className="flex h-[4.375rem] w-full items-center justify-between bg-black bg-opacity-20 px-10 shadow-md transition-all duration-300 hover:shadow-lg ph:px-2">
+    <nav className="flex h-16 w-full items-center justify-between bg-black bg-opacity-20 px-10 shadow-md transition-all duration-300 hover:shadow-lg ph:h-10 ph:px-2">
       {/* Logo Section */}
       <Link
         href="/"
@@ -55,7 +55,7 @@ export default function Nav() {
             sizes="(max-width: 768px) 1.875rem, 3.1rem"
           />
         </div>
-        <span className="text-[3.125rem] font-bold text-black transition-transform duration-300 hover:scale-105 ph:text-2xl">
+        <span className="text-3xl font-bold text-black transition-transform duration-300 hover:scale-105 ph:text-xl">
           Glowshelfie
         </span>
       </Link>
