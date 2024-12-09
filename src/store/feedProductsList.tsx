@@ -13,10 +13,6 @@ export const List = {
       link: 'https://www.yesstyle.com/en/list.html?bpt=48&q=beauty+of+joseon?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
     },
     {
-      name: 'SKINFOOD - Rice Mask Wash Off',
-      link: 'https://www.yesstyle.com/en/skinfood-rice-mask-wash-off-100g-new/info.html/pid.1050664961?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
-    },
-    {
       name: 'SKINFOOD - Egg White Pore Mask',
       link: 'https://www.yesstyle.com/en/skinfood-egg-white-pore-mask-125g/info.html/pid.1050621875?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
     },
