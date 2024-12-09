@@ -1,12 +1,24 @@
 import React, { useState, useEffect, useMemo } from 'react'
-import axios from 'axios'
+import axios, { AxiosError } from 'axios'
 import Image from 'next/image'
 
 interface LinkImageProps {
-  children: string
-  className?: string
-  width?: number
-  height?: number
+  children: string // 링크 URL을 string으로 받음
+  className?: string // CSS 클래스를 선택적으로 받음
+  width?: number // 이미지 가로 크기
+  height?: number // 이미지 세로 크기
+}
+
+interface ApiResponse {
+  data?: {
+    image?: {
+      url?: string
+    }
+  }
+  openGraph?: {
+    image?: string
+  }
+  image?: string
 }
 
 const LinkImage: React.FC<LinkImageProps> = ({
@@ -27,7 +39,7 @@ const LinkImage: React.FC<LinkImageProps> = ({
     }
   }
 
-  const apiList = useMemo(
+  const apiList = useMemo<((url: string) => string)[]>(
     () => [
       (url: string) =>
         `https://api.microlink.io/?url=${encodeURIComponent(url)}`,
@@ -50,19 +62,21 @@ const LinkImage: React.FC<LinkImageProps> = ({
       for (const getApiUrl of apiList) {
         try {
           const apiUrl = getApiUrl(children)
-          const response = await axios.get(apiUrl)
+          const response = await axios.get<ApiResponse>(apiUrl)
+
           const image =
-            response.data?.data?.image?.url ||
-            response.data?.openGraph?.image ||
-            response.data?.image ||
-            '/images/OOPS.png'
+            response.data?.data?.image?.url || // Microlink
+            response.data?.openGraph?.image || // OpenGraph.io
+            response.data?.image || // LinkPreview
+            null
 
           if (image) {
             setImageUrl(image)
             return
           }
         } catch (error) {
-          console.error('API Error:', error)
+          const axiosError = error as AxiosError
+          console.error('API Error:', axiosError.message)
         }
       }
 
