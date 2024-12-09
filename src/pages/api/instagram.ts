@@ -8,7 +8,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const accessToken = process.env.NEXT_PUBLIC_INSTAGRAM_ACCESS_TOKEN
+  const accessToken = process.env.INSTAGRAM_ACCESS_TOKEN
 
   if (!accessToken) {
     res
