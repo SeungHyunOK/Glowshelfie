@@ -79,7 +79,7 @@ function Home() {
         </section>
 
         <section className="w-5/12 rounded-2xl bg-[#D9D9D9] p-10 text-center font-bold shadow-lg shadow-gray-400 ph:w-full ph:p-4 tab:w-11/12 tab:p-6">
-          <div className="ph::gap-2 flex flex-col gap-8 tab:gap-5">
+          <div className="flex flex-col gap-8 ph:gap-2 tab:gap-5">
             <h1 className="animate-fadeIn text-3xl leading-tight text-gray-800 ph:text-base tab:text-xl">
               💖 Already know your{' '}
               <span className="text-pink-600">favorites</span>? 🛍️✨
@@ -88,7 +88,7 @@ function Home() {
               Browse and shop from the brands you love below!
             </h2>
 
-            <div className="m-6 grid grid-cols-2 gap-8 p-2 ph:m-2 ph:gap-4 tab:m-4 tab:gap-6">
+            <div className="m-6 grid grid-cols-2 gap-8 ph:m-2 ph:gap-4 tab:m-4 tab:gap-6">
               {Brands.map((brand) => (
                 <BrandCard
                   key={`${brand.name}-${brand.url}`}

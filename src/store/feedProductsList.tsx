@@ -252,7 +252,7 @@ export const List = {
     },
     {
       name: 'Anua PDRN Hyaluronic Capsule 100 Serum',
-      link: 'https://global.oliveyoung.com/product/detail?prdtNo=GA240925558',
+      link: 'https://global.oliveyoung.com/product/detail?prdtNo=GA240925558&rwardCode=GLOWSHELFIE1&utm_source=influencers',
     },
   ],
   '18038972498339791': [
@@ -305,6 +305,10 @@ export const List = {
     {
       name: 'AXIS - Y - Dark Spot Correcting Glow Toner',
       link: 'https://www.yesstyle.com/en/axis-y-dark-spot-correcting-glow-toner-125ml/info.html/pid.1129633493?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: "ROUND A'ROUND Comfort Green Tea Gel Cleansing Foam",
+      link: 'https://global.oliveyoung.com/product/detail?prdtNo=GA240222216&rwardCode=GLOWSHELFIE1&utm_source=influencers',
     },
     {
       name: 'Anua - Rice 70 Glow Milky Toner',

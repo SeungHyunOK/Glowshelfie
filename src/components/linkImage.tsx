@@ -3,10 +3,10 @@ import axios, { AxiosError } from 'axios'
 import Image from 'next/image'
 
 interface LinkImageProps {
-  children: string // 링크 URL을 string으로 받음
-  className?: string // CSS 클래스를 선택적으로 받음
-  width?: number // 이미지 가로 크기
-  height?: number // 이미지 세로 크기
+  children: string
+  className?: string
+  width?: number
+  height?: number
 }
 
 interface ApiResponse {
@@ -44,9 +44,9 @@ const LinkImage: React.FC<LinkImageProps> = ({
       (url: string) =>
         `https://api.microlink.io/?url=${encodeURIComponent(url)}`,
       (url: string) =>
-        `https://opengraph.io/api/1.1/site/${encodeURIComponent(url)}?app_id=8fbc22a9-7796-49d3-bc10-3d83928d69d5`,
+        `https://opengraph.io/api/1.1/site/${encodeURIComponent(url)}?app_id=${process.env.OPENGRAPH_KEY}`,
       (url: string) =>
-        `https://api.linkpreview.net/?key=8fbe535f089beaf7e77451cd9a885409&q=${encodeURIComponent(url)}`,
+        `https://api.linkpreview.net/?key=${process.env.LINKPREVIEW_KEY}&q=${encodeURIComponent(url)}`,
     ],
     []
   )
