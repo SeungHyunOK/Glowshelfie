@@ -9,8 +9,8 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 const App = ({ Component, pageProps }: AppProps) => {
-  const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID
-  const FACEBOOK_APP_ID = process.env.NEXT_PUBLIC_FACEBOOK_APP_ID
+  const GA_TRACKING_ID = process.env.GA_ID
+  const FACEBOOK_APP_ID = process.env.FACEBOOK_APP_ID
   useEffect(() => {
     window.fbAsyncInit = function () {
       FB.init({
