@@ -130,17 +130,24 @@ export default function Feeds() {
             className="relative aspect-[9/16] cursor-pointer overflow-hidden rounded-lg shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:opacity-80"
             onClick={() => openModal(feed)}
           >
-            <Image
-              src={
-                feed.media_type === 'VIDEO' && feed.thumbnail_url
-                  ? feed.thumbnail_url
-                  : feed.media_url
-              }
-              alt={feed.caption || 'Instagram post'}
-              layout="fill"
-              className="object-cover"
-              loading="lazy"
-            />
+            {feed.media_type === 'VIDEO' ? (
+              <video
+                src={feed.media_url}
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="absolute left-0 top-0 h-full w-full object-cover"
+              />
+            ) : (
+              <Image
+                src={feed.media_url}
+                alt={feed.caption || 'Instagram post'}
+                layout="fill"
+                className="object-cover"
+                loading="lazy"
+              />
+            )}
           </div>
         ))}
       </Slider>
