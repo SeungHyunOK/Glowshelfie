@@ -24,7 +24,7 @@ Anua, Beauty of Joseon, Skin1004, Medicube, COSRX, Tirtir 등 다양한 한국 �
 ---
 
 🔗 링크
-웹사이트: glowshelfie.vercel.app
+웹사이트: [glowshelfie.vercel.app](https://glowshelfie.vercel.app/)
 
 ---
 
