@@ -65,9 +65,9 @@ const LinkImage: React.FC<LinkImageProps> = ({
           const response = await axios.get<ApiResponse>(apiUrl)
 
           const image =
-            response.data?.data?.image?.url || // Microlink
-            response.data?.openGraph?.image || // OpenGraph.io
-            response.data?.image || // LinkPreview
+            response.data?.data?.image?.url ||
+            response.data?.openGraph?.image ||
+            response.data?.image ||
             null
 
           if (image) {

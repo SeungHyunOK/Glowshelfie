@@ -41,7 +41,7 @@ function Home() {
   return (
     <>
       <Head>
-        <title>Glowshelfie - Your Personalized Skincare Journey</title>
+        <title>Glowshelfie - Find your glow with Glowshelfie</title>
         <meta
           name="description"
           content="Create your perfect skincare routine with Glowshelfie. Take our personalized quiz to discover the best products for your unique skin type and concerns."
