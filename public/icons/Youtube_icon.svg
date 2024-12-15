@@ -1,1 +1,8 @@
-<?xml version="1.0" ?><svg data-name="Layer 45" height="24" id="Layer_45" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.80731,16.195a2.79909,2.79909,0,0,1-2.54906,2.53905C17.69062,18.86413,15.36708,19,12.5001,19c-3.45351,0-6.06016-.14114-7.745-.27345a2.79847,2.79847,0,0,1-2.56388-2.53829C2.08863,15.11654,2,13.70862,2,12.0423c0-1.70883.08935-3.142.19251-4.22729a2.79931,2.79931,0,0,1,2.5641-2.54168C6.44145,5.14106,9.04758,5,12.5001,5c2.867,0,5.19052.13587,6.75814.26595A2.79909,2.79909,0,0,1,21.80731,7.805C21.91054,8.88451,22,10.30807,22,12S21.91054,15.11549,21.80731,16.195Z" style="fill:#fa6d62"/><polygon points="9.776 14.939 9.776 9.061 15.574 12 9.776 14.939" style="fill:#fff"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+
+<defs>
+</defs>
+<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+	<path d="M 88.119 23.338 c -1.035 -3.872 -4.085 -6.922 -7.957 -7.957 C 73.144 13.5 45 13.5 45 13.5 s -28.144 0 -35.162 1.881 c -3.872 1.035 -6.922 4.085 -7.957 7.957 C 0 30.356 0 45 0 45 s 0 14.644 1.881 21.662 c 1.035 3.872 4.085 6.922 7.957 7.957 C 16.856 76.5 45 76.5 45 76.5 s 28.144 0 35.162 -1.881 c 3.872 -1.035 6.922 -4.085 7.957 -7.957 C 90 59.644 90 45 90 45 S 90 30.356 88.119 23.338 z M 36 58.5 v -27 L 59.382 45 L 36 58.5 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+</g>
+</svg>

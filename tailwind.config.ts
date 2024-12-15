@@ -35,7 +35,7 @@ const config: Config = {
       screens: {
         ph: { max: '767px' },
         tab: { min: '768px', max: '1024px' },
-        pc: '1025px',
+        pc: { min: '1025px' },
       },
       keyframes: {
         pulse: {
