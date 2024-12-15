@@ -37,8 +37,14 @@
     width: 100%;
     overflow-x: hidden;
     background-image: url('/images/glowshelfe_background.webp');
-    background-size: 'cover';
-    background-position: 'center';
+    background-size: cover;
+    background-position: center;
+  }
+
+  *,
+  *::before,
+  *::after {
+    @apply m-0 box-border p-0;
   }
 }
 
