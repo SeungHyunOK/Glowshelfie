@@ -4,13 +4,17 @@ import Nav from '@/components/nav'
 import Head from 'next/head'
 import Footer from '@/components/footer'
 import Script from 'next/script'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import Discountcode from '@/components/discountcode'
+import Button from '@/components/button'
 
 const App = ({ Component, pageProps }: AppProps) => {
+  const [isOpenDiscount, setIsOpenDiscount] = useState(false)
   const GA_TRACKING_ID = process.env.GA_ID
   const FACEBOOK_APP_ID = process.env.FACEBOOK_APP_ID
+
   useEffect(() => {
     window.fbAsyncInit = function () {
       FB.init({
@@ -27,6 +31,22 @@ const App = ({ Component, pageProps }: AppProps) => {
     script.defer = true
     document.body.appendChild(script)
   }, [FACEBOOK_APP_ID])
+
+  useEffect(() => {
+    const hasClosedDiscount =
+      localStorage.getItem('hasClosedDiscount') === 'true'
+    if (!hasClosedDiscount) {
+      setIsOpenDiscount(true)
+    }
+  }, [])
+
+  const openDiscount = () => {
+    setIsOpenDiscount(true)
+  }
+  const closeDiscount = () => {
+    setIsOpenDiscount(false)
+    localStorage.setItem('hasClosedDiscount', 'true')
+  }
 
   return (
     <>
@@ -55,6 +75,19 @@ const App = ({ Component, pageProps }: AppProps) => {
         }}
       />
       <Nav />
+      {!isOpenDiscount && (
+        <Button
+          onClick={openDiscount}
+          className="fixed left-0 top-1/2 z-30 -translate-y-1/2 transform rounded-b-2xl bg-[#F7DFDE] px-4 py-2 font-bold shadow-lg hover:bg-pink-500"
+          style={{
+            transform: 'rotate(-90deg) translateX(50%)',
+            transformOrigin: 'top left',
+          }}
+        >
+          Get Discount
+        </Button>
+      )}
+      <Discountcode isOpen={isOpenDiscount} closeDiscount={closeDiscount} />
       <Component {...pageProps} />
       <Footer />
     </>

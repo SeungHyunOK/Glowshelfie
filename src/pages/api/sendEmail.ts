@@ -9,10 +9,15 @@ export default async function handler(
     return res.status(405).json({ message: 'Method not allowed' })
   }
 
-  const { name, email, message } = req.body
+  const { email } = req.body // 프론트엔드에서 보내는 email 데이터만 받음
 
-  if (!name || !email || !message) {
-    return res.status(400).json({ message: 'All fields are required' })
+  if (!email) {
+    return res.status(400).json({ message: 'Email is required' })
+  }
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  if (!emailRegex.test(email)) {
+    return res.status(400).json({ message: 'Invalid email format' })
   }
 
   try {
@@ -25,77 +30,58 @@ export default async function handler(
     })
 
     const mailOptions = {
-      from: email,
-      to: 'ohl2619@naver.com',
-      subject: `📩 New Contact from ${name}`,
+      from: process.env.GMAIL_USER, // 발신자 이메일
+      to: email, // 수신자 이메일
+      subject: '🎉 Exclusive Discount Codes for You!',
       html: `
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <style>
-        body {
-          font-family: Arial, sans-serif;
-          line-height: 1.6;
-          color: #333;
-          margin: 0;
-          padding: 0;
-          background-color: #f9f9f9;
-        }
-        .email-container {
-          max-width: 600px;
-          margin: 20px auto;
-          background: #fff;
-          padding: 20px;
-          border-radius: 8px;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .header {
-          background-color: #007BFF;
-          color: #fff;
-          padding: 15px;
-          text-align: center;
-          border-radius: 8px 8px 0 0;
-          font-size: 20px;
-          font-weight: bold;
-        }
-        .content {
-          padding: 20px;
-        }
-        .content p {
-          margin: 10px 0;
-        }
-        .footer {
-          margin-top: 20px;
-          text-align: center;
-          font-size: 12px;
-          color: #666;
-        }
-      </style>
-    </head>
-    <body>
-      <div class="email-container">
-        <div class="header">
-          📩 New Contact from ${name}
-        </div>
-        <div class="content">
-          <p><strong>Name:</strong> ${name}</p>
-          <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Message:</strong></p>
-          <p>${message}</p>
-        </div>
-        <div class="footer">
-          <p>This email was sent from your website's contact form.</p>
-        </div>
-      </div>
-    </body>
-    </html>
-      `.trim(), // HTML 이메일 내용
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+        <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9; color: #333;">
+          <div style="max-width: 600px; margin: 20px auto; background: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <div style="background-color: #ff77a9; color: #ffffff; padding: 15px; text-align: center; border-radius: 8px 8px 0 0; font-size: 20px; font-weight: bold;">
+              🎉 Hi beautiful souls 💓🥹
+            </div>
+            <div style="padding: 20px; text-align: left;">
+              <h1 style="font-size: 24px; color: #333; text-align: center; margin-bottom: 20px;">Get Your Exclusive Discount Codes!</h1>
+              <p>You can go to the below trustful and complete websites:</p>
+              <ul style="list-style-type: none; padding: 0;">
+                <li style="margin-bottom: 10px;">
+                  <a href="https://bit.ly/3T51R8y" target="_blank" style="color: #28a745; text-decoration: none; font-weight: bold;">
+                    Olive Young Global
+                  </a>
+                  with code <span style="color: #d9534f;">GLOWSHELFIE1</span>
+                </li>
+                <li style="margin-bottom: 10px;">
+                  <a href="https://bit.ly/4bM3ZJt" target="_blank" style="color: #28a745; text-decoration: none; font-weight: bold;">
+                    Yesstyle
+                  </a>
+                  with code <span style="color: #d9534f;">GLOWSHELFIE0</span>
+                </li>
+                <li style="margin-bottom: 10px;">
+                  <a href="https://www.stylevana.com/" target="_blank" style="color: #28a745; text-decoration: none; font-weight: bold;">
+                    Stylevana
+                  </a>
+                  with code <span style="color: #d9534f;">INF10GSHELFIE</span>
+                </li>
+              </ul>
+              <p style="margin-top: 20px;">Use these codes for more discounts and save money 💓</p>
+              <p style="margin-top: 20px; text-align: center;">Happy shopping 🛍</p>
+            </div>
+            <div style="margin-top: 20px; text-align: center; font-size: 12px; color: #666;">
+              <p>This email was sent from <a href="https://glowshelfie.vercel.app/" target="_blank" style="text-decoration: underline;">Glowshelfie.</a></p>
+            </div>
+          </div>
+        </body>
+        </html>
+      `.trim(),
     }
 
     await transporter.sendMail(mailOptions)
-    res.status(200).json({ message: 'Email send successfully!' })
+    res.status(200).json({ message: 'Email sent successfully!' })
   } catch (error) {
     console.error(error)
     res.status(500).json({ message: 'Error sending email' })
