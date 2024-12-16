@@ -607,6 +607,54 @@ export const List = {
       link: 'https://www.yesstyle.com/en/some-by-mi-v10-hyal-air-fit-sunscreen-normal-version-50ml/info.html/pid.1128160794?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
     },
   ],
+  '18040268522202383': [
+    {
+      name: 'FULLY - Green Tomato Clay Pack Cleanser',
+      link: 'https://www.yesstyle.com/en/fully-green-tomato-clay-pack-cleanser-120ml/info.html/pid.1128723189?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'numbuzin - No.5 Vitamin-Niacinamide Concentrated Pad',
+      link: 'https://www.yesstyle.com/en/numbuzin-no-5-vitamin-niacinamide-concentrated-pad-70-pads/info.html/pid.1124137874?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'SKIN 1004 - Madagascar Centella Asiatica 100 Ampoule',
+      link: 'https://www.yesstyle.com/en/skin-1004-madagascar-centella-asiatica-100-ampoule-100ml/info.html/pid.1067114916?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'numbuzin - No.5 Vitamin Concentrated Serum',
+      link: 'https://www.yesstyle.com/en/numbuzin-no-5-vitamin-concentrated-serum-30ml/info.html/pid.1124137872?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Isntree - Hyaluronic Acid Aqua Gel Cream',
+      link: 'https://www.yesstyle.com/en/isntree-hyaluronic-acid-aqua-gel-cream-80ml/info.html/pid.1113521192?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Anua - Heartleaf Silky Moisture Sun Cream',
+      link: 'https://www.yesstyle.com/en/anua-heartleaf-silky-moisture-sun-cream-50ml/info.html/pid.1120981352?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+  ],
+  '18065854303811559': [
+    {
+      name: 'medicube - PDRN Pink Peptide Serum',
+      link: 'https://www.yesstyle.com/en/medicube-pdrn-pink-peptide-serum-30ml/info.html/pid.1129886159?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Biodance - Collagen Gel Toner Pads',
+      link: 'https://www.yesstyle.com/en/biodance-collagen-gel-toner-pads-60-pads/info.html/pid.1131493947?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'COSRX - The 6 Peptide Skin Booster',
+      link: 'https://www.yesstyle.com/en/cosrx-the-6-peptide-skin-booster-150ml/info.html/pid.1124133306?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: "d'Alba - White Truffle Double Serum & Cream",
+      link: 'https://www.yesstyle.com/en/dalba-white-truffle-double-serum-cream-70g/info.html/pid.1131155578?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'EQQUALBERRY - Swimming Pool Daily Facial Toner',
+      link: 'https://www.yesstyle.com/en/eqqualberry-swimming-pool-daily-facial-toner-300ml/info.html/pid.1128582991?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+  ],
 }
 
 /*
