@@ -18,6 +18,9 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  env: {
+    GA_ID: process.env.GA_ID,
+  },
 }
 
 export default nextConfig

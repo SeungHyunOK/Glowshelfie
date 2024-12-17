@@ -65,24 +65,21 @@ const App = ({ Component, pageProps }: AppProps) => {
       />
       <Script
         id="google-analytics"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}');
-          `,
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '${GA_TRACKING_ID}');
+    `,
         }}
       />
       <Nav />
       {!isOpenDiscount && (
         <Button
           onClick={openDiscount}
-          className="fixed left-0 top-1/2 z-30 -translate-y-1/2 transform rounded-b-2xl bg-[#F7DFDE] px-4 py-2 font-bold shadow-lg hover:bg-pink-500"
-          style={{
-            transform: 'rotate(-90deg) translateX(50%)',
-            transformOrigin: 'top left',
-          }}
+          className="fixed left-0 top-1/2 z-30 origin-top-left -translate-y-1/2 rotate-[-90deg] transform rounded-b-2xl bg-[#F7DFDE] px-4 py-2 font-bold shadow-lg hover:bg-pink-500"
         >
           Get Discount
         </Button>
