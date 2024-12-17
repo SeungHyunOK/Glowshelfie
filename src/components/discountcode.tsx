@@ -82,10 +82,10 @@ export default function Discountcode({
               />
             </div>
             <h1 className="text-3xl font-bold ph:text-lg tab:text-xl">
-              💸Save money with discount code
+              💸 Save money with discount code
             </h1>
             <h4 className="text-lg text-stone-500 ph:text-sm tab:text-base">
-              📩Receive your discount code via email!
+              📩 Receive your discount code via email!
             </h4>
             <form
               onSubmit={handleSubmit}
