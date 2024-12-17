@@ -12,7 +12,6 @@ import Button from '@/components/button'
 
 const App = ({ Component, pageProps }: AppProps) => {
   const [isOpenDiscount, setIsOpenDiscount] = useState(false)
-  const GA_TRACKING_ID = process.env.GA_ID
   const FACEBOOK_APP_ID = process.env.FACEBOOK_APP_ID
 
   useEffect(() => {
@@ -61,18 +60,18 @@ const App = ({ Component, pageProps }: AppProps) => {
       </Head>
       <Script
         async
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        src="https://www.googletagmanager.com/gtag/js?id=G-4NPXWYY71B"
       />
       <Script
         id="google-analytics"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', '${GA_TRACKING_ID}');
-    `,
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-4NPXWYY71B');
+          `,
         }}
       />
       <Nav />
