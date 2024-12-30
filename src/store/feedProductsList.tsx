@@ -729,6 +729,240 @@ export const List = {
       link: 'https://global.oliveyoung.com/if/rd?su=ZKL3B36D',
     },
   ],
+  '18044149808177207': [
+    {
+      name: 'numbuzin - No.5 Vitamin Concentrated Serum',
+      link: 'https://www.yesstyle.com/en/numbuzin-no-5-vitamin-concentrated-serum-30ml/info.html/pid.1124137872?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Anua - Niacinamide 10% + TXA 4% Serum',
+      link: 'Produhttps://www.yesstyle.com/en/anua-niacinamide-10-txa-4-serum-2024-version-30ml/info.html/pid.1126101447?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencerctLink',
+    },
+    {
+      name: 'AXIS - Y - Dark Spot Correcting Glow Toner',
+      link: 'https://www.yesstyle.com/en/axis-y-dark-spot-correcting-glow-toner-125ml/info.html/pid.1129633493?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'SKIN 1004 - Madagascar Centella Hyalu-Cica Blue Serum',
+      link: 'https://www.yesstyle.com/en/skin-1004-madagascar-centella-hyalu-cica-blue-serum-50ml/info.html/pid.1102658856?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Torriden - DIVE-IN Low Molecule Hyaluronic Acid Serum',
+      link: 'https://www.yesstyle.com/en/torriden-dive-in-low-molecule-hyaluronic-acid-serum-renewed-50ml/info.html/pid.1115692618?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Centellian24 Madeca Cream Time Reverse 50mL',
+      link: 'https://global.oliveyoung.com/product/detail?prdtNo=GA240121561',
+    },
+    {
+      name: 'SKIN 1004 - Madagascar Centella Asiatica 100 Ampoule',
+      link: 'https://www.yesstyle.com/en/skin-1004-madagascar-centella-asiatica-100-ampoule-100ml/info.html/pid.1067114916?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'SKIN 1004 - Madagascar Centella Probio-Cica Intensive Ampoule',
+      link: 'https://www.yesstyle.com/en/skin-1004-madagascar-centella-probio-cica-intensive-ampoule-50ml/info.html/pid.1120208638?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Purito SEOUL - Wonder Releaf Centella Serum Unscented',
+      link: 'https://www.yesstyle.com/en/purito-seoul-wonder-releaf-centella-serum-unscented-60ml/info.html/pid.1127264626?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'medicube - AGE-R Vita C Pro Ampoule',
+      link: 'https://www.yesstyle.com/en/medicube-age-r-vita-c-pro-ampoule-20ml/info.html/pid.1129746066?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Anua - Peach 70 Niacin Serum',
+      link: 'https://www.yesstyle.com/en/anua-peach-70-niacin-serum-30ml/info.html/pid.1132099566?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'JUMISO - All Day Vitamin Pure C 5.5 Glow Serum 30ml',
+      link: 'https://www.yesstyle.com/en/jumiso-all-day-vitamin-pure-c-5-5-glow-serum-30ml-30ml/info.html/pid.1129690465?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Centellian24 Expert Madeca Mela Capture Ampoule Max',
+      link: 'https://global.oliveyoung.com/product/detail?prdtNo=GA231020695',
+    },
+    {
+      name: 'SKIN 1004 - Madagascar Centella Tone Brightening Capsule Ampoule',
+      link: 'https://www.yesstyle.com/en/skin-1004-madagascar-centella-tone-brightening-capsule-ampoule-50ml/info.html/pid.1129356820?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'JUMISO - All Day Vitamin Brightening & Balancing Facial Serum',
+      link: 'https://www.yesstyle.com/en/jumiso-all-day-vitamin-brightening-balancing-facial-serum-jumbo-50ml/info.html/pid.1129589064?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Beauty of Joseon - Glow Serum',
+      link: 'https://www.yesstyle.com/en/beauty-of-joseon-glow-serum-30ml/info.html/pid.1089210994?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+  ],
+  '17866944423201278': [
+    {
+      name: 'Beauty of Joseon - Relief Sun',
+      link: 'https://www.yesstyle.com/en/beauty-of-joseon-relief-sun-50ml/info.html/pid.1107744417?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'ROUND LAB BIRCH JUICE MOISTURIZING SUNSCREEN 50ml Set',
+      link: 'https://global.oliveyoung.com/product/detail?prdtNo=GA210004685',
+    },
+  ],
+  '17951774519905421': [
+    {
+      name: 'Anua - Heartleaf Pore Control Cleansing Oil',
+      link: 'https://www.yesstyle.com/en/anua-heartleaf-pore-control-cleansing-oil-200ml/info.html/pid.1118224587?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Anua - 8 Hyaluronic Acid Hydrating Gentle Foaming Cleanser',
+      link: 'https://www.yesstyle.com/en/anua-8-hyaluronic-acid-hydrating-gentle-foaming-cleanser-150ml/info.html/pid.1129554323?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Centellian24 Madeca Mela Capture Ampoule Pad',
+      link: 'https://global.oliveyoung.com/product/detail?prdtNo=GA231020782',
+    },
+    {
+      name: 'Anua PDRN Hyaluronic Capsule 100 Serum 30ml',
+      link: 'https://global.oliveyoung.com/product/detail?prdtNo=GA240925558',
+    },
+    {
+      name: 'celimax - Noni Ampoule Calming + Radiance',
+      link: 'https://www.yesstyle.com/en/celimax-noni-ampoule-calming-radiance-2024-version-30ml/info.html/pid.1128999958?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Centellian24 Madeca Cream Time Reverse 50mL',
+      link: 'https://global.oliveyoung.com/product/detail?prdtNo=GA240121561',
+    },
+    {
+      name: 'Beauty of Joseon - Relief Sun',
+      link: 'https://www.yesstyle.com/en/beauty-of-joseon-relief-sun-50ml/info.html/pid.1107744417?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+  ],
+  '18090475513520260': [
+    {
+      name: 'Anua shop',
+      link: 'https://www.yesstyle.com/en/anua/list.html/bpt.299_bid.325602?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Mixsoon shop',
+      link: 'https://www.yesstyle.com/en/mixsoon/list.html/bpt.299_bid.327891?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Beauty of Joseon',
+      link: 'https://www.yesstyle.com/en/beauty-of-joseon/list.html/bpt.299_bid.320196?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Medicube shop ',
+      link: 'https://www.yesstyle.com/en/medicube/list.html/bpt.299_bid.320913?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Skin1004 shop',
+      link: 'https://www.yesstyle.com/en/skin-1004/list.html/bpt.299_bid.321173?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+  ],
+  '17941634846814454': [
+    {
+      name: 'FULLY - Green Tomato Clay Pack Cleanser',
+      link: 'https://www.yesstyle.com/en/fully-green-tomato-clay-pack-cleanser-120ml/info.html/pid.1128723189?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+  ],
+  '18048592931116675': [
+    {
+      name: 'medicube - PDRN Pink Peptide Serum',
+      link: 'https://www.yesstyle.com/en/medicube-pdrn-pink-peptide-serum-30ml/info.html/pid.1129886159?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Biodance - Collagen Gel Toner Pads',
+      link: 'https://www.yesstyle.com/en/biodance-collagen-gel-toner-pads-60-pads/info.html/pid.1131493947?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'COSRX - The 6 Peptide Skin Booster',
+      link: 'https://www.yesstyle.com/en/cosrx-the-6-peptide-skin-booster-150ml/info.html/pid.1124133306?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: "d'Alba - White Truffle Double Serum & Cream",
+      link: 'https://www.yesstyle.com/en/dalba-white-truffle-double-serum-cream-70g/info.html/pid.1131155578?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'EQQUALBERRY - Swimming Pool Daily Facial Toner',
+      link: 'https://www.yesstyle.com/en/eqqualberry-swimming-pool-daily-facial-toner-300ml/info.html/pid.1128582991?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+  ],
+  '18258966952261167': [
+    {
+      name: 'FULLY - Green Tomato Clay Pack Cleanser',
+      link: 'https://www.yesstyle.com/en/fully-green-tomato-clay-pack-cleanser-120ml/info.html/pid.1128723189?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'SKIN 1004 - Madagascar Centella Poremizing Fresh Ampoule',
+      link: 'https://www.yesstyle.com/en/skin-1004-madagascar-centella-poremizing-fresh-ampoule-50ml/info.html/pid.1131600836?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'medicube - Zero Pore Pad 2.0',
+      link: 'https://www.yesstyle.com/en/medicube-zero-pore-pad-2-0-70-pads/info.html/pid.1124067239?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+  ],
+  '17961309254845834': [
+    {
+      name: 'Anua - Niacinamide 10% + TXA 4% Serum',
+      link: 'https://www.yesstyle.com/en/anua-niacinamide-10-txa-4-serum-2024-version-30ml/info.html/pid.1126101447?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Dr. Althea - 345 Relief Cream',
+      link: 'https://www.yesstyle.com/en/dr-althea-345-relief-cream-renewed-50ml/info.html/pid.1124698946?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Centellian24 Madeca Cream Time Reverse 50mL',
+      link: 'https://global.oliveyoung.com/product/detail?prdtNo=GA240121561',
+    },
+    {
+      name: 'La Roche-Posay - Cicaplast Baume B5+ Ultra-Repairing Soothing Balm',
+      link: 'https://www.yesstyle.com/en/la-roche-posay-cicaplast-baume-b5-ultra-repairing-soothing-balm/info.html/pid.1125793072?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'AXIS - Y - Dark Spot Correcting Glow Cream',
+      link: 'https://www.yesstyle.com/en/axis-y-dark-spot-correcting-glow-cream-50ml/info.html/pid.1129633494',
+    },
+    {
+      name: 'medicube - Collagen Jelly Cream',
+      link: 'https://www.yesstyle.com/en/medicube-collagen-jelly-cream-110ml/info.html/pid.1124066776',
+    },
+  ],
+  '17899611111017734': [
+    {
+      name: 'Anua - Niacinamide 10% + TXA 4% Serum',
+      link: 'https://www.yesstyle.com/en/anua-niacinamide-10-txa-4-serum-2024-version-30ml/info.html/pid.1126101447?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Biodance - Collagen Gel Toner Pads',
+      link: 'https://www.yesstyle.com/en/biodance-collagen-gel-toner-pads-60-pads/info.html/pid.1131493947?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'SKIN 1004 - Madagascar Centella Poremizing Quick Clay Stick Mask',
+      link: 'https://www.yesstyle.com/en/skin-1004-madagascar-centella-poremizing-quick-clay-stick-mask-27g/info.html/pid.1123474314?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'SKIN 1004 - Madagascar Centella Poremizing Fresh Ampoule Mini',
+      link: 'https://www.yesstyle.com/en/skin-1004-madagascar-centella-poremizing-fresh-ampoule-mini-30ml/info.html/pid.1120450256?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Beauty of Joseon - Red Bean Refreshing Pore Mask',
+      link: 'https://www.yesstyle.com/en/beauty-of-joseon-red-bean-refreshing-pore-mask-140ml/info.html/pid.1117674777?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'House of Hur - Purifying Cleansing Balm',
+      link: 'https://www.yesstyle.com/en/house-of-hur-purifying-cleansing-balm-50ml/info.html/pid.1129066458?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'House of Hur - Clearing Skin Prep Essence Pad',
+      link: 'https://www.yesstyle.com/en/house-of-hur-clearing-skin-prep-essence-pad-70-pads/info.html/pid.1125268517?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'medicube - PDRN Pink Peptide Serum',
+      link: 'https://www.yesstyle.com/en/medicube-pdrn-pink-peptide-serum-30ml/info.html/pid.1129886159?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Anua - Peach 77 Niacin Essence Toner',
+      link: 'https://www.yesstyle.com/en/anua-peach-77-niacin-essence-toner-250ml/info.html/pid.1125108339?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+  ],
 }
 
 /*
