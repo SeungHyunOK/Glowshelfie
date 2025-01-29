@@ -1193,6 +1193,44 @@ export const List = {
       link: 'https://www.yesstyle.com/en/anua-azelaic-acid-10-hyaluron-redness-soothing-serum-30ml/info.html/pid.1132449411?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
     },
   ],
+  '18053775206080459': [
+    {
+      name: 'Anua - Azelaic Acid 10 Hyaluron Redness Soothing Serum ',
+      link: 'https://www.yesstyle.com/fr/anua-azelaic-acid-10/info.html/pid.1132449411?q=Anua&bpt=48?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+  ],
+  '18084805297602970': [
+    {
+      name: 'Abib Pore Cleansing Oil Heartleaf Oil-Wash',
+      link: 'https://global.oliveyoung.com/if/rd?su=SQ2UR0I9',
+    },
+    {
+      name: 'ETUDE Soonjung pH 6.5 Whip Cleanser',
+      link: 'https://global.oliveyoung.com/if/rd?su=QJAKN94K',
+    },
+    {
+      name: 'Purito Seoul - Wonder Releaf Centella Toner Unscented',
+      link: 'https://www.yesstyle.com/fr/purito-seoul-wonder-releaf-centella-toner-unscented-lotion-tonique/info.html/pid.1127264628?q=Anua&bpt=48?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Anua - Azelaic Acid 10 Hyaluron Redness Soothing Serum ',
+      link: 'https://www.yesstyle.com/fr/anua-azelaic-acid-10/info.html/pid.1132449411?q=Anua&bpt=48?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Anua - 3 Ceramide Panthenol Moisture Barrier Cream',
+      link: 'https://www.yesstyle.com/fr/anua-3-ceramide-panthenol/info.html/pid.1131506971?q=Anua&bpt=48?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+    {
+      name: 'Anua - Heartleaf Silky Moisture Sun Cream',
+      link: 'https://www.yesstyle.com/fr/anua-heartleaf-silky/info.html/pid.1120981352?q=Anua&bpt=48?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+  ],
+  '17865555198319000': [
+    {
+      name: 'Anua - Heartleaf Silky Moisture Sun Cream',
+      link: 'https://www.yesstyle.com/fr/anua-heartleaf-silky/info.html/pid.1120981352?q=Anua&bpt=48?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer',
+    },
+  ],
 }
 
 /*
