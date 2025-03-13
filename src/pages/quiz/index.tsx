@@ -4,6 +4,7 @@ import { AnswerOption } from '@/type/answerOption'
 import Result from '@/components/result'
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 
 interface Question {
   question: JSX.Element
@@ -174,7 +175,7 @@ function ResultsScreen({
     <div className="flex flex-col items-center justify-center text-center">
       <span className="mb-8 flex flex-col gap-8 font-bold ph:mb-4 ph:gap-4 tab:mb-6 tab:gap-6">
         <h1 className="text-4xl ph:text-lg tab:text-2xl">
-          🐰 Your <span className="bg-yellow-300">{answers[0]}</span> /{' '}
+          🐰 Your <span className="bg-[#F7DFDE]">{answers[0]}</span> /{' '}
           <span className="bg-pink-300">{answers[1]}</span> results 💓✨
         </h1>
 
@@ -183,7 +184,7 @@ function ResultsScreen({
         </h2>
       </span>
       <ul className="mb-8 flex flex-wrap justify-center gap-6 text-2xl font-bold ph:mb-4 ph:grid-cols-2 ph:gap-2 ph:text-sm tab:mb-6 tab:gap-4 tab:text-lg">
-        <li className="inline-block flex-1 basis-2/5 rounded-lg bg-[#F7DFDE] px-4 py-2 shadow-md transition-transform duration-300 hover:rotate-1 hover:scale-110 hover:bg-amber-200">
+        <li className="inline-block flex-1 basis-2/5 rounded-2xl bg-[#F7DFDE] px-4 py-2 shadow-md transition-transform duration-300 hover:rotate-1 hover:scale-110 hover:bg-amber-200">
           <a
             href="https://www.yesstyle.com/en/home.html?rco=GLOWSHELFIE0&utm_term=GLOWSHELFIE0&utm_medium=Influencer&utm_source=dynamic&mcg=influencer"
             target="_blank"
@@ -194,7 +195,7 @@ function ResultsScreen({
           </a>
           <h1 className="underline">GLOWSHELFIE0</h1>
         </li>
-        <li className="inline-block flex-1 basis-2/5 rounded-lg bg-[#F7DFDE] px-4 py-2 shadow-md transition-transform duration-300 hover:rotate-1 hover:scale-110 hover:bg-amber-200">
+        <li className="inline-block flex-1 basis-2/5 rounded-2xl bg-[#F7DFDE] px-4 py-2 shadow-md transition-transform duration-300 hover:rotate-1 hover:scale-110 hover:bg-amber-200">
           <a
             href="https://global.oliveyoung.com/?rwardCode=GLOWSHELFIE1&utm_source=influencers"
             target="_blank"
@@ -205,7 +206,7 @@ function ResultsScreen({
           </a>
           <h1 className="underline">GLOWSHELFIE1</h1>
         </li>
-        <li className="inline-block flex-1 basis-2/5 rounded-lg bg-[#F7DFDE] px-4 py-2 shadow-md transition-transform duration-300 hover:rotate-1 hover:scale-110 hover:bg-amber-200">
+        <li className="inline-block flex-1 basis-2/5 rounded-2xl bg-[#F7DFDE] px-4 py-2 shadow-md transition-transform duration-300 hover:rotate-1 hover:scale-110 hover:bg-amber-200">
           <a
             href="https://www.stylevana.com/en_US/"
             target="_blank"
@@ -216,7 +217,7 @@ function ResultsScreen({
           </a>
           <h1 className="underline">INF10GSHELFIE</h1>
         </li>
-        <li className="inline-block flex-1 basis-2/5 rounded-lg bg-[#F7DFDE] px-4 py-2 shadow-md transition-transform duration-300 hover:rotate-1 hover:scale-110 hover:bg-amber-200">
+        <li className="inline-block flex-1 basis-2/5 rounded-2xl bg-[#F7DFDE] px-4 py-2 shadow-md transition-transform duration-300 hover:rotate-1 hover:scale-110 hover:bg-amber-200">
           <a
             href="https://beautyofjoseon.com/?dt_id=1529790"
             target="_blank"
@@ -227,7 +228,7 @@ function ResultsScreen({
           </a>
           <h1 className="underline">GLOWSHELFIE</h1>
         </li>
-        <li className="inline-block flex-1 basis-2/5 rounded-lg bg-[#F7DFDE] px-4 py-2 shadow-md transition-transform duration-300 hover:rotate-1 hover:scale-110 hover:bg-amber-200">
+        <li className="inline-block flex-1 basis-2/5 rounded-2xl bg-[#F7DFDE] px-4 py-2 shadow-md transition-transform duration-300 hover:rotate-1 hover:scale-110 hover:bg-amber-200">
           <a
             href="https://mixsoon.us/?srsltid=AfmBOooqvCdF_ShGTyE2bVQPu_NSeGm1VYANo6DBmlxfFwC39G7qnNY_"
             target="_blank"
@@ -242,13 +243,13 @@ function ResultsScreen({
       <Result answers={answers} />
       <div className="flex justify-center gap-6 ph:w-full ph:gap-2 tab:gap-4">
         <Link
-          className="mt-8 rounded-lg bg-[#F7DFDE] p-3 text-2xl shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200 ph:mt-4 ph:w-full ph:text-sm tab:mt-6 tab:text-lg"
+          className="mt-8 rounded-2xl bg-[#F7DFDE] p-3 text-2xl shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200 ph:mt-4 ph:w-full ph:text-sm tab:mt-6 tab:text-lg"
           href="/"
         >
           Home
         </Link>
         <Button
-          className="mt-8 rounded-lg bg-[#F7DFDE] p-3 text-2xl shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200 ph:mt-4 ph:w-full ph:text-sm tab:mt-6 tab:text-lg"
+          className="mt-8 rounded-2xl bg-[#F7DFDE] p-3 text-2xl shadow-md transition-transform duration-200 hover:scale-105 hover:bg-amber-200 ph:mt-4 ph:w-full ph:text-sm tab:mt-6 tab:text-lg"
           onClick={onRestart}
         >
           Restart Quiz
