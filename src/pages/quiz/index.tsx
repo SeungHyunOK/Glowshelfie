@@ -4,7 +4,6 @@ import { AnswerOption } from '@/type/answerOption'
 import Result from '@/components/result'
 import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/image'
 
 interface Question {
   question: JSX.Element
