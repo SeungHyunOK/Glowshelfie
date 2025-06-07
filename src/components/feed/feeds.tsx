@@ -230,7 +230,6 @@ export default function Feeds() {
                   Let&apos;t Start!
                 </Button>
               </Link>
-              <h1>{selectedFeed.id}</h1>
             </div>
             <div className="w-full pc:w-2/3">
               {(List as FeedProductsListType)[selectedFeed.id]?.length > 0 ? (
